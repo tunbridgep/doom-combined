@@ -1,0 +1,470 @@
+map C1M1 lookup "HUSTR_E1M1"
+{
+	levelnum = 1
+	next = "C1M2"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 30
+	music = "$MUSIC_E1M1"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+    NoAutosaveHint
+}
+
+map C1M2 lookup "HUSTR_E1M2"
+{
+	levelnum = 2
+	next = "C1M3"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 75
+	music = "$MUSIC_E1M2"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C1M3 lookup "HUSTR_E1M3"
+{
+	levelnum = 3
+	next = "C1M4"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 120
+	music = "$MUSIC_E1M3"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C1M4 lookup "HUSTR_E1M4"
+{
+	levelnum = 4
+	next = "C1M5"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 90
+	music = "$MUSIC_E1M4"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C1M5 lookup "HUSTR_E1M5"
+{
+	levelnum = 5
+	next = "C1M6"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 165
+	music = "$MUSIC_E1M5"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C1M6 lookup "HUSTR_E1M6"
+{
+	levelnum = 6
+	next = "C1M7"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 180
+	music = "$MUSIC_E1M6"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C1M7 lookup "HUSTR_E1M7"
+{
+	levelnum = 7
+	next = "C1M8"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 180
+	music = "$MUSIC_E1M7"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C1M8 lookup "HUSTR_E1M8"
+{
+	levelnum = 8
+	next = "EndGame1"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 30
+	nointermission
+	nosoundclipping
+	baronspecial
+	specialaction_lowerfloor
+	music = "$MUSIC_E1M8"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C1M9 lookup "HUSTR_E1M9"
+{
+	levelnum = 9
+	next = "C1M4"
+	secretnext = "C1M4"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 165
+	music = "$MUSIC_E1M9"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+// Registered/Retail Episode 2
+
+map C2M1 lookup "HUSTR_E2M1"
+{
+	levelnum = 11
+	next = "C2M2"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 90
+	music = "$MUSIC_E2M1"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C2M2 lookup "HUSTR_E2M2"
+{
+	levelnum = 12
+	next = "C2M3"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 90
+	music = "$MUSIC_E2M2"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C2M3 lookup "HUSTR_E2M3"
+{
+	levelnum = 13
+	next = "C2M4"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 90
+	music = "$MUSIC_E2M3"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C2M4 lookup "HUSTR_E2M4"
+{
+	levelnum = 14
+	next = "C2M5"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 120
+	music = "$MUSIC_E2M4"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C2M5 lookup "HUSTR_E2M5"
+{
+	levelnum = 15
+	next = "C2M6"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 90
+	music = "$MUSIC_E2M5"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C2M6 lookup "HUSTR_E2M6"
+{
+	levelnum = 16
+	next = "C2M7"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 360
+	music = "$MUSIC_E2M6"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C2M7 lookup "HUSTR_E2M7"
+{
+	levelnum = 17
+	next = "C2M8"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 240
+	music = "$MUSIC_E2M7"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C2M8 lookup "HUSTR_E2M8"
+{
+	levelnum = 18
+	next = "EndGame2"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 30
+	nointermission
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E2M8"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C2M9 lookup "HUSTR_E2M9"
+{
+	levelnum = 19
+	next = "C2M6"
+	secretnext = "C2M6"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 170
+	music = "$MUSIC_E2M9"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+// Registered/Retail Episode 3
+
+map C3M1 lookup "HUSTR_E3M1"
+{
+	levelnum = 21
+	next = "C3M2"
+	secretnext = "C3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 90
+	music = "$MUSIC_E3M1"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C3M2 lookup "HUSTR_E3M2"
+{
+	levelnum = 22
+	next = "C3M3"
+	secretnext = "C3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 45
+	music = "$MUSIC_E3M2"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C3M3 lookup "HUSTR_E3M3"
+{
+	levelnum = 23
+	next = "C3M4"
+	secretnext = "C3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 90
+	music = "$MUSIC_E3M3"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C3M4 lookup "HUSTR_E3M4"
+{
+	levelnum = 24
+	next = "C3M5"
+	secretnext = "C3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 150
+	music = "$MUSIC_E3M4"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C3M5 lookup "HUSTR_E3M5"
+{
+	levelnum = 25
+	next = "C3M6"
+	secretnext = "C3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 90
+	music = "$MUSIC_E3M5"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C3M6 lookup "HUSTR_E3M6"
+{
+	levelnum = 26
+	next = "C3M7"
+	secretnext = "C3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 90
+	music = "$MUSIC_E3M6"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C3M7 lookup "HUSTR_E3M7"
+{
+	levelnum = 27
+	next = "C3M8"
+	secretnext = "C3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 165
+	music = "$MUSIC_E3M7"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C3M8 lookup "HUSTR_E3M8"
+{
+	levelnum = 28
+	next = "endbunny"
+	secretnext = "C3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 30
+	nointermission
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E3M8"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map C3M9 lookup "HUSTR_E3M9"
+{
+	levelnum = 29
+	next = "C3M7"
+	secretnext = "C3M7"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 135
+	music = "$MUSIC_E3M9"
+	exitpic = "$IN_C3"
+	enterpic = "$IN_C3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+
+// Clusters (correspond with same-numbered episode)
+
+cluster 41
+{
+	flat = "$bgflatC1"
+	music = "D_VICTOR"
+	exittext = lookup, "C1TEXT"
+}
+
+cluster 42
+{
+	flat = "$bgflatC2"
+	music = "D_VICTOR"
+	exittext = lookup, "C2TEXT"
+}
+
+cluster 43
+{
+	flat = "$bgflatC3"
+	music = "D_VICTOR"
+	exittext = lookup, "C3TEXT"
+}
+
+cluster 44
+{
+	flat = "$bgflatC4"
+	music = "D_VICTOR"
+	exittext = lookup, "C4TEXT"
+}
+
+episode c1m1
+{
+	//picname = "M_EPI1"
+	name = "Knee-Deep in the Dead (Maps of Chaos)"
+}
+
+episode c2m1
+{
+	//picname = "M_EPI2"
+	name = "The Shores of Hell (Maps of Chaos)"
+}
+
+episode c3m1
+{
+	//picname = "M_EPI3"
+	name = "Inferno (Maps of Chaos)"
+}

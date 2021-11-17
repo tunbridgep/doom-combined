@@ -1,0 +1,1 @@
+server bool dc_use_tnt_animated_textures = false;

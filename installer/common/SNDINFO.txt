@@ -1,0 +1,1 @@
+$random menu/quit { player/male/death1 demon/pain grunt/pain misc/gibbed misc/teleport grunt/sight1 grunt/sight3 demon/melee vile/active misc/p_pkup brain/cube skeleton/swing knight/death baby/active }

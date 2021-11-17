@@ -1,0 +1,12 @@
+ListMenu "EpisodeMenu"
+{
+   Font "SMALLFONT", "RED"
+   Linespacing 8
+   NetgameMessage "$NETGAME"
+   
+   StaticPatch 50, 2, "M_EPISOD"
+   Position 30, 30
+   Selector "-", -10, 0
+   
+   // Items will be filled in by MAPINFO
+}

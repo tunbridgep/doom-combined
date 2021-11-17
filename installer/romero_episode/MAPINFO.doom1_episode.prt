@@ -1,0 +1,93 @@
+episode FAKE_ROMERO
+{
+	name = "Knee-Deep in Romero's Dead"
+	key = "R"
+	optional
+}
+
+map FAKE_ROMERO "Fake Romero Start Map"
+{
+    next = "E1M1"
+    NoIntermission
+}
+
+map FAKE_ROMERO1 "Romero Episode Fixer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "RomeroToken", "Z1M1"
+    next = "E1M4"
+}
+
+map FAKE_ROMERO2 "Romero Episode Fixer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "RomeroToken", "Z1M2"
+    next = "E1M8"
+}
+
+map FAKE_ROMERO3 "Romero Episode Fixer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "RomeroToken", "E1M5"
+    next = "Z1M2"
+}
+
+map E1M3 lookup "HUSTR_E1M3"
+{
+	next = "FAKE_ROMERO1"
+	secretnext = "E1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 120
+	music = "$MUSIC_E1M3"
+	exitpic = "$IN_E1"
+	enterpic = "$IN_E1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map E1M7 lookup "HUSTR_E1M7"
+{
+	next = "FAKE_ROMERO2"
+	secretnext = "E1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 180
+	music = "$MUSIC_E1M7"
+	exitpic = "$IN_E1"
+	enterpic = "$IN_E1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map E1M9 lookup "HUSTR_E1M9"
+{
+	next = "E1M4"
+	secretnext = "E1M4"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 165
+	music = "$MUSIC_E1M9"
+	exitpic = "$IN_E1"
+	enterpic = "$IN_E1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map Z1M1 "Phobos Mission Control"
+{
+	levelnum = 1
+	next = "FAKE_ROMERO3"
+	secretnext = "FAKE_ROMERO3"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 90
+	music = "$MUSIC_E1M4"
+	exitpic = "$IN_E1"
+	enterpic = "$IN_E1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}

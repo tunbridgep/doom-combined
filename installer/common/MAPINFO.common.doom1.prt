@@ -1,0 +1,54 @@
+//Add Extra Help Screen and things from Doom 1
+Gameinfo
+{
+	creditpage = "D1CREDIT","CREDIT"
+	infopage = "HELP1","HELP"
+	drawreadthis = true
+	quitsound = "menu/quit"
+	quitmessages = 	"$QUITMSG", "$QUITMSG1", "$QUITMSG2", "$QUITMSG3", "$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7",
+					"$QUITMSG", "$QUITMSG1", "$QUITMSG2", "$QUITMSG3", "$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7",
+				   	"$QUITMSG8", "$QUITMSG9", "$QUITMSG10", "$QUITMSG11", "$QUITMSG12", "$QUITMSG13", "$QUITMSG14"
+
+}
+
+//Episodes
+clearepisodes
+
+//These are defined here so that they always appear first before Doom 2, otherwise we have to do Doom 2 first.
+episode e1m1
+{
+	//picname = "M_EPI1"
+	name = "Knee-Deep in the Dead"
+	key = "k"
+	optional
+}
+
+episode e2m1
+{
+	//picname = "M_EPI2"
+	name = "The Shores of Hell"
+	key = "s"
+	optional
+}
+
+episode e3m1
+{
+	//picname = "M_EPI3"
+	name = "Inferno"
+	key = "i"
+	optional
+}
+
+episode e4m1
+{
+	//picname = "M_EPI4"
+	name = "Thy Flesh Consumed"
+	key = "t"
+	optional
+}
+
+episode map01
+{
+	name = "Hell On Earth"
+	key = "h"
+}

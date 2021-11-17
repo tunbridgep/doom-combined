@@ -1,0 +1,12 @@
+
+map FAKE_TOC "Fake Maps of Chaos Start Map"
+{
+    next = "C1M1"
+    NoIntermission
+}
+
+map FAKE_FD "Fake FD Start Map"
+{
+    next = "F1M1"
+    NoIntermission
+}

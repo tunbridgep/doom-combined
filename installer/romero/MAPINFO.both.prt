@@ -1,0 +1,35 @@
+episode z1m1
+{
+	name = "Extra Maps"
+	key = "x"
+	optional
+}
+map Z1M2 "Tech Gone Bad"
+{
+	levelnum = 2
+	next = "EndGame1"
+	secretnext = "EndGame1"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 300
+	music = "$MUSIC_E1M8"
+	exitpic = "$IN_E1"
+	enterpic = "$IN_E1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map Z1M1 "Phobos Mission Control"
+{
+	levelnum = 1
+	next = "Z1M2"
+	secretnext = "Z1M2"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 90
+	music = "$MUSIC_E1M4"
+	exitpic = "$IN_E1"
+	enterpic = "$IN_E1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}

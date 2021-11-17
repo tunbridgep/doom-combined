@@ -1,0 +1,104 @@
+//This file was created because the ReplaceTextures() function is garbage and only works if we have textures defined (it can't replace null or unknown textures"
+//This means that if we don't have ALL iwads loaded, some textures won't animate properly or will have other horrible issues!
+//This file is only included if we do NOT have the relevant game IWAD, otherwise the proper one is used instead
+//This simply makes every texture reference the placeholder patch
+
+Texture "TNTBLGR1", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "TNTSW1SK", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "BLOD3", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "TNTBLGR4", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "TNTWFAL1", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "TNTSW2SK", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "FALL3", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "TNTWFAL4", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "TNTSDR1", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD2", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD3", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD4", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD5", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD6", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD7", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD8", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD9", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD10", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLAD11", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "TNTSDR3", 512, 128
+{
+	Patch "PLACEHOL", 256, 66
+}

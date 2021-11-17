@@ -1,0 +1,42 @@
+#library "MasterLevelsStrip"
+#import "func.acs"
+#include "zcommon.acs"
+
+function bool IsStripEnabled(void)
+{
+    return !GetCVar("dc_allow_continuous_master_levels");
+}
+
+function bool HasVanillaWeapons(void)
+{
+    return CheckInventory("Pistol") && CheckInventory("Fist");
+}
+
+script "ResetCharacter" ENTER
+{
+    if (!IsMasterLevels() || !IsStripEnabled())
+        Terminate;
+    else
+    {
+        if (!HasVanillaWeapons())
+        {
+            //we are using a custom inventory, so don't strip our weapons
+            if (IsDebug())
+                Log(s:"Non-Vanilla Loadout detected: Not resetting inventory");
+            Terminate;
+        }
+        else
+        {
+            if (IsDebug())
+                Log(s:"Master Levels Detected: Resetting player stats and inventory");
+            //Doom 2 is easy
+            ClearInventory();
+            GiveInventory("Fist",1);
+            GiveInventory("Pistol",1);
+            GiveInventory("Clip",30);
+            UseInventory("Pistol");
+            SetActorProperty(0,APROP_Health,100);
+        }
+    }
+
+}

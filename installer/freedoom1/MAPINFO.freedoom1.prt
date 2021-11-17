@@ -1,0 +1,617 @@
+//Episodes
+episode f1m1
+{
+	//picname = "M_EPI1"
+	name = "Outpost Outbreak"
+	key = "o"
+}
+
+episode f2m1
+{
+	//picname = "M_EPI2"
+	name = "Military Labs"
+	key = "m"
+}
+
+episode f3m1
+{
+	//picname = "M_EPI3"
+	name = "Event Horizon"
+	key = "e"
+}
+
+episode f4m1
+{
+	//picname = "M_EPI4"
+	name = "Double Impact"
+	key = "d"
+}
+
+map F1M1 "Outer Prison"
+{
+	levelnum = 1
+	next = "F1M2"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 30
+	music = "F_E1M1"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+    NoAutosaveHint
+}
+
+map F1M2 "Communications Center"
+{
+	levelnum = 2
+	next = "F1M3"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 75
+	music = "F_E1M2"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F1M3 "Waste Disposal"
+{
+	levelnum = 3
+	next = "F1M4"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 120
+	music = "F_E1M3"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F1M4 "Supply Depot"
+{
+	levelnum = 4
+	next = "F1M5"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 90
+	music = "F_E1M4"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F1M5 "Main Control"
+{
+	levelnum = 5
+	next = "F1M6"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 165
+	music = "F_E1M5"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F1M6 "Training Facility"
+{
+	levelnum = 6
+	next = "F1M7"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 180
+	music = "F_E1M6"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F1M7 "Transportation Bay"
+{
+	levelnum = 7
+	next = "F1M8"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 180
+	music = "F_E1M7"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F1M8 "Outpost Quarry"
+{
+	levelnum = 8
+	next = "EndGame1"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 30
+	nointermission
+	nosoundclipping
+	baronspecial
+	specialaction_lowerfloor
+	music = "F_E1M8"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F1M9 "Armory"
+{
+	levelnum = 9
+	next = "F1M4"
+	secretnext = "F1M4"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 165
+	music = "F_E1M9"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M1 "Ruins"
+{
+	levelnum = 11
+	next = "F2M2"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 90
+	music = "F_E2M1"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M2 "Power Plant"
+{
+	levelnum = 12
+	next = "F2M3"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 90
+	music = "F_E2M2"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M3 "Archaeology Site"
+{
+	levelnum = 13
+	next = "F2M4"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 90
+	music = "F_E2M3"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M4 "Sample Holding Site"
+{
+	levelnum = 14
+	next = "F2M5"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 120
+	music = "F_E2M4"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M5 "Fortress 31"
+{
+	levelnum = 15
+	next = "F2M6"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 90
+	music = "F_E2M5"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M6 "Trepidation Site"
+{
+	levelnum = 16
+	next = "F2M7"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 360
+	music = "F_E2M6"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M7 "Quarantine Vessel"
+{
+	levelnum = 17
+	next = "F2M8"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 240
+	music = "F_E2M7"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M8 "Containment Cell"
+{
+	levelnum = 18
+	next = "EndGame2"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 30
+	nointermission
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+	music = "F_E2M8"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M9 "Corruption of Man"
+{
+	levelnum = 19
+	next = "F2M6"
+	secretnext = "F2M6"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 170
+	music = "F_E2M9"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M1 "Land of the Lost"
+{
+	levelnum = 21
+	next = "F3M2"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 90
+	music = "F_E3M1"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M2 "Infernal Caverns"
+{
+	levelnum = 22
+	next = "F3M3"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 45
+	music = "F_E3M2"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M3 "Derelict Temple"
+{
+	levelnum = 23
+	next = "F3M4"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 90
+	music = "F_E3M3"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M4 "Sacrificial Bastion"
+{
+	levelnum = 24
+	next = "F3M5"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 150
+	music = "F_E3M4"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M5 "Oblation Temple"
+{
+	levelnum = 25
+	next = "F3M6"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 90
+	music = "F_E3M5"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M6 "Igneous Intrusion"
+{
+	levelnum = 26
+	next = "F3M7"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 90
+	music = "F_E3M6"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M7 "No Regrets"
+{
+	levelnum = 27
+	next = "F3M8"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 165
+	music = "F_E3M7"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M8 "Ancient Lair"
+{
+	levelnum = 28
+	next = "EndGame3"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 30
+	nointermission
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+	music = "F_E3M8"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M9 "Acquainted With Grief"
+{
+	levelnum = 29
+	next = "F3M7"
+	secretnext = "F3M7"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 135
+	music = "F_E3M9"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F4M1 "Maintenance Area"
+{
+	levelnum = 31
+	next = "F4M2"
+	secretnext = "F4M9"
+	sky1 = "FDSKY4"
+	cluster = 4
+	music = "F_E3M4"
+	InterMusic = "F_INTER"
+	exitpic = "dnterpic"
+	enterpic = "dnterpic"
+	BorderTexture = "FLOOR7_2"
+    par = 90
+}
+
+map F4M2 "Research Complex"
+{
+	levelnum = 32
+	next = "F4M3"
+	secretnext = "F4M9"
+	sky1 = "FDSKY4"
+	cluster = 4
+	music = "F_E3M2"
+	InterMusic = "F_INTER"
+	ExitPic = "FNTERPIC"
+	EnterPic = "FNTERPIC"
+	BorderTexture = "FLOOR7_2"
+    par = 40
+}
+
+map F4M3 "Central Computing"
+{
+	levelnum = 33
+	next = "F4M4"
+	secretnext = "F4M9"
+	sky1 = "FDSKY4"
+	cluster = 4
+	music = "F_E3M3"
+	InterMusic = "F_INTER"
+	ExitPic = "FNTERPIC"
+	EnterPic = "FNTERPIC"
+	BorderTexture = "FLOOR7_2"
+    par = 105
+}
+
+map F4M4 "Hydroponic Facility"
+{
+	levelnum = 34
+	next = "F4M5"
+	secretnext = "F4M9"
+	sky1 = "FDSKY4"
+	cluster = 4
+	music = "F_E1M5"
+	InterMusic = "F_INTER"
+	ExitPic = "FNTERPIC"
+	EnterPic = "FNTERPIC"
+	BorderTexture = "FLOOR7_2"
+    par = 80
+}
+
+map F4M5 "Engineering Station"
+{
+	levelnum = 35
+	next = "F4M6"
+	secretnext = "F4M9"
+	sky1 = "FDSKY4"
+	cluster = 4
+	music = "F_E2M7"
+	InterMusic = "F_INTER"
+	ExitPic = "FNTERPIC"
+	EnterPic = "FNTERPIC"
+	BorderTexture = "FLOOR7_2"
+    par = 100
+}
+
+map F4M6 "Command Center"
+{
+	levelnum = 36
+	next = "F4M7"
+	secretnext = "F4M9"
+	sky1 = "FDSKY4"
+	cluster = 4
+	cyberdemonspecial
+	specialaction_opendoor
+	music = "F_E2M4"
+	InterMusic = "F_INTER"
+	ExitPic = "FNTERPIC"
+	EnterPic = "FNTERPIC"
+	BorderTexture = "FLOOR7_2"
+    par = 150
+}
+
+map F4M7 "Waste Treatment"
+{
+	levelnum = 37
+	next = "F4M8"
+	secretnext = "F4M9"
+	sky1 = "FDSKY4"
+	cluster = 4
+	music = "F_E2M6"
+	InterMusic = "F_INTER"
+	ExitPic = "FNTERPIC"
+	EnterPic = "FNTERPIC"
+	BorderTexture = "FLOOR7_2"
+    par = 75
+}
+
+map F4M8 "Launch Bay"
+{
+	levelnum = 38
+	next = "EndGame4"
+	secretnext = "F4M9"
+	sky1 = "FDSKY4"
+	cluster = 4
+	nointermission
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+	music = "F_E2M5"
+	InterMusic = "F_INTER"
+	ExitPic = "FNTERPIC"
+	EnterPic = "FNTERPIC"
+	BorderTexture = "FLOOR7_2"
+    par = 100
+}
+
+map F4M9 "Operations"
+{
+	levelnum = 39
+	next = "F4M3"
+	secretnext = "F4M3"
+	sky1 = "FDSKY4"
+	cluster = 4
+	music = "F_E1M9"
+	InterMusic = "F_INTER"
+	ExitPic = "FNTERPIC"
+	EnterPic = "FNTERPIC"
+	BorderTexture = "FLOOR7_2"
+    par = 90
+}
+
+// Clusters (correspond with same-numbered episode)
+
+cluster 80 
+{
+	flat = "$bgflatE1"
+	music = "D_VICTOR"
+	exittext = lookup, "E1TEXT"
+}
+
+cluster 81
+{
+	flat = "$bgflatE2"
+	music = "D_VICTOR"
+	exittext = lookup, "E2TEXT"
+}
+
+cluster 82
+{
+	flat = "$bgflatE3"
+	music = "D_VICTOR"
+	exittext = lookup, "E3TEXT"
+}
+
+cluster 83
+{
+	flat = "$bgflatE4"
+	music = "D_VICTOR"
+	exittext = lookup, "E4TEXT"
+}

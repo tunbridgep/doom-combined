@@ -1,0 +1,90 @@
+episode FAKE_TUD
+{
+	name = "The Ultimate Doom (Single Episode)"
+	key = "D"
+	optional
+}
+
+map FAKE_TUD "Fake TUD Start Map"
+{
+    next = "E1M1"
+    NoIntermission
+}
+
+map E1M8 lookup "HUSTR_E1M8"
+{
+	next = "FAKE_TUD1"
+	secretnext = "E1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 30
+	nointermission
+	nosoundclipping
+	baronspecial
+	specialaction_lowerfloor
+	music = "$MUSIC_E1M8"
+	exitpic = "$IN_E1"
+	enterpic = "$IN_E1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map FAKE_TUD1 "TUD Episode Changer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "E2M1"
+    next = "EndGame1"
+}
+
+map E2M8 lookup "HUSTR_E2M8"
+{
+	next = "FAKE_TUD2"
+	secretnext = "E2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 30
+	nointermission
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E2M8"
+	exitpic = "$IN_E2"
+	enterpic = "$IN_E2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map FAKE_TUD2 "TUD Episode Changer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "E3M1"
+    next = "EndGame2"
+}
+
+map E3M8 lookup "HUSTR_E3M8"
+{
+	next = "FAKE_TUD3"
+	secretnext = "E3M9"
+	sky1 = "D1SKY3"
+	cluster = 3
+	par = 30
+	nointermission
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E3M8"
+	exitpic = "$IN_E3"
+	enterpic = "$IN_E3"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map FAKE_TUD3 "TUD Episode Changer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "E4M1"
+    next = "endbunny"
+}

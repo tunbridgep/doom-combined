@@ -1,0 +1,24 @@
+#library "EpisodeFixer"
+#include "zcommon.acs"
+
+#define TOKEN "FullPlaythroughToken"
+#define TOKEN2 "RomeroToken"
+
+script "EpisodeFixer" ENTER
+{
+    str mapname = StrParam(n:PRINTNAME_LEVEL);
+    if (mapname == "FAKE_TUD" || mapname == "FAKE_TOC" || mapname == "FAKE_FD" || mapname == "FAKE_TNT" || mapname == "FAKE_PLU")
+    {
+        GiveInventory(TOKEN,1);
+        Exit_Normal(0);
+    }
+    else if (mapname == "FAKE_ROMERO")
+    {
+        GiveInventory(TOKEN2,1);
+        Exit_Normal(0);
+    }
+    else if (mapname == "FAKE_TUD1" || mapname == "FAKE_TUD2" || mapname == "FAKE_TUD3" || mapname == "FAKE_TOC1" || mapname == "FAKE_TOC2" || mapname == "FAKE_TOC3" || mapname == "FAKE_TNTEND" || mapname == "FAKE_PLUEND" || mapname == "FAKE_FD1" || mapname == "FAKE_FD2" || mapname == "FAKE_FD3" || mapname == "FAKE_ROMERO1" || mapname == "FAKE_ROMERO2" || mapname == "FAKE_ROMERO3")
+    {
+        Exit_Normal(0);
+    }
+}

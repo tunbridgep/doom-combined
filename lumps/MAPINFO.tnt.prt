@@ -1,0 +1,481 @@
+// MAPINFO for TNT. Exactly the same as Doom 2, except it
+// has different map names and cluster messages.
+
+episode TNT01
+{
+	name = "TNT: Evilution"
+	key = "E"
+}
+
+map TNT01 "System Control"
+{
+	next = "TNT02"
+	secretnext = "TNT02"
+	sky1 = "TNTSKY1"
+	cluster = 30
+	par = 30
+	music = "D_TNT01"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT02 "Human BBQ"
+{
+	next = "TNT03"
+	secretnext = "TNT03"
+	sky1 = "TNTSKY1"
+	cluster = 30
+	par = 90
+	music = "D_TNT02"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT03 "Power Control"
+{
+	next = "TNT04"
+	secretnext = "TNT04"
+	sky1 = "TNTSKY1"
+	cluster = 30
+	par = 120
+	music = "D_TNT03"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT04 "Wormhole"
+{
+	next = "TNT05"
+	secretnext = "TNT05"
+	sky1 = "TNTSKY1"
+	cluster = 30
+	par = 120
+	music = "D_TNT04"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT05 "Hanger"
+{
+	next = "TNT06"
+	secretnext = "TNT06"
+	sky1 = "TNTSKY1"
+	cluster = 30
+	par = 90
+	music = "D_TNT05"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT06 "Open Season"
+{
+	next = "TNT07"
+	secretnext = "TNT07"
+	sky1 = "TNTSKY1"
+	cluster = 30
+	par = 150
+	music = "D_TNT06"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT07 "Prison"
+{
+	next = "TNT08"
+	secretnext = "TNT08"
+	sky1 = "TNTSKY1"
+	cluster = 31
+	par = 120
+	map07special
+	music = "D_TNT07"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT08 "Metal"
+{
+	next = "TNT09"
+	secretnext = "TNT09"
+	sky1 = "TNTSKY1"
+	cluster = 31
+	par = 120
+	music = "D_TNT08"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT09 "Stronghold"
+{
+	next = "TNT10"
+	secretnext = "TNT10"
+	sky1 = "TNTSKY1"
+	cluster = 31
+	par = 270
+	music = "D_TNT09"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT10 "Redemption"
+{
+	next = "TNT11"
+	secretnext = "TNT11"
+	sky1 = "TNTSKY1"
+	cluster = 31
+	par = 90
+	music = "D_TNT10"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT11 "Storage Facility"
+{
+	next = "TNT12"
+	secretnext = "TNT12"
+	sky1 = "TNTSKY1"
+	cluster = 31
+	par = 210
+	music = "D_TNT11"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT12 "Crater"
+{
+	next = "TNT13"
+	secretnext = "TNT13"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 150
+	music = "D_TNT12"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT13 "Nukage Processing"
+{
+	next = "TNT14"
+	secretnext = "TNT14"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 150
+	music = "D_TNT13"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT14 "Steel Works"
+{
+	next = "TNT15"
+	secretnext = "TNT15"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 150
+	music = "D_TNT14"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT15 "Dead Zone"
+{
+	next = "TNT16"
+	secretnext = "TNT31"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 210
+	music = "D_TNT15"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT16 "Deepest Reaches"
+{
+	next = "TNT17"
+	secretnext = "TNT17"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 150
+	music = "D_TNT16"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT17 "Processing Area"
+{
+	next = "TNT18"
+	secretnext = "TNT18"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 420
+	music = "D_TNT17"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT18 "Mill"
+{
+	next = "TNT19"
+	secretnext = "TNT19"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 150
+	music = "D_TNT18"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT19 "Shipping/Respawning"
+{
+	next = "TNT20"
+	secretnext = "TNT20"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 210
+	music = "D_TNT19"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT20 "Central Processing"
+{
+	next = "TNT21"
+	secretnext = "TNT21"
+	sky1 = "TNTSKY2"
+	cluster = 32
+	par = 150
+	music = "D_TNT20"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT21 "Administration Center"
+{
+	next = "TNT22"
+	secretnext = "TNT22"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 240
+	music = "D_TNT21"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT22 "Habitat"
+{
+	next = "TNT23"
+	secretnext = "TNT23"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 150
+	music = "D_TNT22"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT23 "Lunar Mining Project"
+{
+	next = "TNT24"
+	secretnext = "TNT24"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 180
+	music = "D_TNT23"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT24 "Quarry"
+{
+	next = "TNT25"
+	secretnext = "TNT25"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 150
+	music = "D_TNT24"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT25 "Baron's Den"
+{
+	next = "TNT26"
+	secretnext = "TNT26"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 150
+	music = "D_TNT25"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT26 "Ballistyx"
+{
+	next = "TNT27"
+	secretnext = "TNT27"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 300
+	music = "D_TNT26"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT27 "Mount Pain"
+{
+	next = "TNT28"
+	secretnext = "TNT28"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 330
+	music = "D_TNT27"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT28 "Heck"
+{
+	next = "TNT29"
+	secretnext = "TNT29"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 420
+	music = "D_TNT28"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT29 "River Styx"
+{
+	next = "TNT30"
+	secretnext = "TNT30"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 300
+	music = "D_TNT29"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT30 "Last Call"
+{
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 180
+	allowmonstertelefrags
+	music = "D_TNT30"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT31 "Pharaoh"
+{
+	next = "TNT16"
+	secretnext = "TNT32"
+	sky1 = "TNTSKY3"
+	cluster = 34
+	par = 120
+	music = "D_TNTINT"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+map TNT32 "Caribbean"
+{
+	next = "TNT16"
+	secretnext = "TNT16"
+	sky1 = "TNTSKY3"
+	cluster = 35
+	par = 30
+	music = "D_TNT32"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}
+
+// TNT first cluster (up thru level 6)
+
+cluster 30
+{
+	flat = "$BGFLAT06"
+	exittext = lookup, "T1TEXT"
+    music = "d_tntre"
+}
+
+// TNT second cluster (up thru level 11)
+
+cluster 31
+{
+	flat = "$BGFLAT11"
+	exittext = lookup, "T2TEXT"
+    music = "d_tntre"
+}
+
+// TNT third cluster (up thru level 20)
+
+cluster 32
+{
+	flat = "$BGFLAT20"
+	exittext = lookup, "T3TEXT"
+    music = "d_tntre"
+}
+
+// TNT fourth cluster (up thru level 30)
+
+cluster 33
+{
+	flat = "$BGFLAT30"
+	exittext = lookup, "T4TEXT"
+    music = "d_tntre"
+}
+
+// TNT fifth cluster (level 31)
+
+cluster 34
+{
+	flat = "$BGFLAT15"
+	entertext = lookup, "T5TEXT"
+    music = "d_tntre"
+}
+
+// TNT sixth cluster (level 32)
+
+cluster 35
+{
+	flat = "$BGFLAT31"
+	entertext = lookup, "T6TEXT"
+    music = "d_tntre"
+}
+

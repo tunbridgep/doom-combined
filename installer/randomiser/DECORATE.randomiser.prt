@@ -1,0 +1,75 @@
+//this object spawns to do our detection
+//when we call the Replace() function
+Actor DC_Replacer {}
+
+Actor ChaingunReplacer 2002
+{
+	States
+	{
+		Spawn:
+			TNT1 A 1 ACS_NamedExecuteAlways("ReplaceChaingun")
+			TNT1 A 15
+            //TNT1 A 1 A_Remove(AAPTR_DEFAULT)
+            TNT1 A 1
+	}
+}
+
+Actor ImpReplacer 3001
+{
+	States
+	{
+		Spawn:
+			TNT1 A 1 ACS_NamedExecuteAlways("ReplaceImp")
+			TNT1 A 15
+            //TNT1 A 1 A_Remove(AAPTR_DEFAULT)
+            TNT1 A 1
+	}
+}
+
+Actor ShotgunGuyReplacer 9
+{
+	States
+	{
+		Spawn:
+			TNT1 A 1 ACS_NamedExecuteAlways("ReplaceShotgunGuy")
+			TNT1 A 15
+            //TNT1 A 1 A_Remove(AAPTR_DEFAULT)
+            TNT1 A 1
+	}
+}
+
+Actor SpectreReplacer 58
+{
+	States
+	{
+		Spawn:
+			TNT1 A 1 ACS_NamedExecuteAlways("ReplaceSpectre")
+			TNT1 A 15
+            //TNT1 A 1 A_Remove(AAPTR_DEFAULT)
+            TNT1 A 1
+	}
+}
+
+Actor BaronReplacer 3003
+{
+	States
+	{
+		Spawn:
+			TNT1 A 1 ACS_NamedExecuteAlways("ReplaceBaron")
+			TNT1 A 15
+            //TNT1 A 1 A_Remove(AAPTR_DEFAULT)
+            TNT1 A 1
+	}
+}
+
+Actor CacoReplacer 3005
+{
+	States
+	{
+		Spawn:
+			TNT1 A 1 ACS_NamedExecuteAlways("ReplaceCaco")
+			TNT1 A 15
+            //TNT1 A 1 A_Remove(AAPTR_DEFAULT)
+            TNT1 A 1
+	}
+}

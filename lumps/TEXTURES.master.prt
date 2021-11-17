@@ -1,0 +1,12 @@
+Texture "ML_SKYB", 1024, 128
+{
+	Patch "ml_sky", 0, 0
+	Patch "ml_sky", 256, 0
+	Patch "ml_sky", 512, 0
+	Patch "ml_sky", 768, 0
+}
+
+Texture "ML_SKY1", 256, 128
+{
+	Patch "ml_sky", 0, 0
+}

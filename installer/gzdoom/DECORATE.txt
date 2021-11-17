@@ -1,0 +1,19 @@
+//these are our tokens
+ACTOR FullPlaythroughToken : Inventory
+{
+    +INVENTORY.UNDROPPABLE
+    +INVENTORY.HUBPOWER
+    +INVENTORY.PERSISTENTPOWER
+    +INVENTORY.KEEPDEPLETED
+    +INVENTORY.UNTOSSABLE
+    +INVENTORY.IGNORESKILL
+    -INVENTORY.INVBAR
+    +NOGRAVITY
+    Inventory.InterHubAmount 1
+    Inventory.MaxAmount 1
+    Inventory.Amount 1
+}
+
+//this is needed so we can do two distinct playthroughs on E1,
+//and we need to know which one is you
+ACTOR RomeroToken : FullPlaythroughToken {}

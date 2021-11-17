@@ -1,0 +1,266 @@
+// MAPINFO for the Master Levels. Blends the maps together into 1 episode and fixes skies
+// Also changes up the music
+
+episode ML01
+{
+	name = "Master Levels for Doom 2"
+	key = "M"
+}
+
+map ML01 "Attack"
+{
+	next = "ML02"
+	secretnext = "ML02"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_RUNNIN"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML02 "Black Tower"
+{
+	next = "ML03"
+	secretnext = "ML03"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_DOOM"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML03 "Bloodsea Keep"
+{
+	next = "ML04"
+	secretnext = "ML04"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_OPENIN"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+    Map07Special
+}
+
+map ML04 "Canyon"
+{
+	next = "ML05"
+	secretnext = "ML05"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_DDTBLU"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML05 "The Catwalk"
+{
+	next = "ML06"
+	secretnext = "ML06"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_ROMERO"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML06 "The Combine"
+{
+	next = "ML07"
+	secretnext = "ML07"
+	sky1 = "ML_SKY1"
+	cluster = 60
+	music = "D_MESSAG"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML07 "The Fistula"
+{
+	next = "ML08"
+	secretnext = "ML08"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_READ_M"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML08 "The Garrison"
+{
+	next = "ML09"
+	secretnext = "ML09"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_DEAD"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML09 "Geryon: 6th Canto of INFERNO"
+{
+	next = "ML10"
+	secretnext = "ML10"
+	sky1 = "ML_SKY1"
+	cluster = 60
+	music = "D_AMPIE"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML10 "Titan Manor"
+{
+	next = "ML11"
+	secretnext = "ML11"
+	sky1 = "ML_SKYB"
+	cluster = 60
+	music = "D_TENSE"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML11 "Mephisto's Mausoleum"
+{
+	next = "ML12"
+	secretnext = "ML12"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_ADRIAN"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML12 "Minos' Judgement: 4th Canto of INFERNO"
+{
+	next = "ML13"
+	secretnext = "ML13"
+	sky1 = "ML_SKY1"
+	cluster = 60
+	music = "D_THE_DA"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML13 "Nessus: 5th Canto of INFERNO"
+{
+	next = "ML14"
+	secretnext = "ML14"
+	sky1 = "ML_SKY1"
+	cluster = 60
+	music = "D_OPENIN"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+    Map07Special
+}
+
+map ML14 "Paradox"
+{
+	next = "ML15"
+	secretnext = "ML15"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_SHAWN"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML15 "Subspace"
+{
+	next = "ML16"
+	secretnext = "ML16"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_AMPIE"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML16 "Subterra"
+{
+	next = "ML17"
+	secretnext = "ML17"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_DDTBLU"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML17 "TEETH: The Express Elevator to Hell"
+{
+	next = "ML19"
+	secretnext = "ML18"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_BETWEE"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML18 "TEETH: Floor 13"
+{
+	next = "ML19"
+	secretnext = "ML19"
+	sky1 = "SKY1"
+	cluster = 60
+	music = "D_ULTIMA"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML19 "Trapped on Titan"
+{
+	next = "ML20"
+	secretnext = "ML20"
+	sky1 = "ML_SKYB"
+	cluster = 60
+	music = "D_STALKS"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML20 "Vesperas: 7th Canto of INFERNO"
+{
+	next = "ML21"
+	secretnext = "ML21"
+	sky1 = "ML_SKY1"
+	cluster = 60
+	music = "D_INTER"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+map ML21 "Virgil's Lead: 3rd Canto of INFERNO"
+{
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "ML_SKY1"
+	cluster = 60
+	music = "D_EVIL"
+	InterMusic = "D_DM2INT"
+	ExitPic = "MLTERPIC"
+	EnterPic = "MLTERPIC"
+}
+
+cluster 60
+{
+}

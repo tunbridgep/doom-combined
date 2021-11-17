@@ -1,0 +1,12 @@
+Texture "FDSKY5", 256, 128
+{
+	Patch "FDSKY5", 0, 0
+}
+Texture "FDSKY6", 256, 128
+{
+	Patch "FDSKY6", 0, 0
+}
+Texture "FDSKY7", 256, 128
+{
+	Patch "FDSKY7", 0, 0
+}

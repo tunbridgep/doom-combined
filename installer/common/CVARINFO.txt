@@ -1,0 +1,4 @@
+server bool dc_no_extra_actors = false;
+user bool dc_debug = false;
+server bool dc_allow_continuous_master_levels = false;
+server int dc_use_randomizer = 0;

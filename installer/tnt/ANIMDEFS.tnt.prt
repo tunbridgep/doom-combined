@@ -1,0 +1,10 @@
+switch doom 2 TNTS1GST on pic TNTS2GST tics 0
+switch doom 2 TNTSW1SK on pic TNTSW2SK tics 0
+
+texture	TNTSDR1 range TNTSDR3 tics 8 allowdecals
+texture	TNTWFAL1 range TNTWFAL4 tics 8 allowdecals
+texture	TNTBLGR1 range TNTBLGR4 tics 8 allowdecals
+
+texture	SPACEW3A range SPACEW3D tics 8 allowdecals
+texture	COMPSTAA range COMPSTAF tics 8 allowdecals
+texture	SILVER3A range SILVER3D tics 8 allowdecals

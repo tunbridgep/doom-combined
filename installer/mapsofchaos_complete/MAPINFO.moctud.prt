@@ -1,0 +1,60 @@
+map C1M8 lookup "HUSTR_E1M8"
+{
+	levelnum = 8
+	next = "FAKE_TOC1"
+	secretnext = "C1M9"
+	sky1 = "D1SKY1"
+	cluster = 1
+	par = 30
+	nointermission
+	nosoundclipping
+	baronspecial
+	specialaction_lowerfloor
+	music = "$MUSIC_E1M8"
+	exitpic = "$IN_C1"
+	enterpic = "$IN_C1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map FAKE_TOC1 "Episode Changer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "C2M1"
+    next = "EndGame1"
+}
+
+map C2M8 lookup "HUSTR_E2M8"
+{
+	levelnum = 18
+	next = "FAKE_TOC2"
+	secretnext = "C2M9"
+	sky1 = "D1SKY2"
+	cluster = 2
+	par = 30
+	nointermission
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E2M8"
+	exitpic = "$IN_C2"
+	enterpic = "$IN_C2"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map FAKE_TOC2 "Episode Changer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "C3M1"
+    next = "EndGame2"
+}
+
+episode FAKE_TOC
+{
+	name = "The Ultimate Doom (Maps of Chaos)"
+	key = "C"
+	optional
+}

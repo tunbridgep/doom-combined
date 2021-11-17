@@ -1,0 +1,65 @@
+episode FAKE_PLU
+{
+	name  = "Final Doom (Single Episode - Plutonia Start)"
+}
+
+episode FAKE_TNT
+{
+	name  = "Final Doom (Single Episode - TNT Start)"
+}
+
+map FAKE_TNT "Fake TNT Start Map"
+{
+    next = "TNT01"
+    NoIntermission
+}
+
+map FAKE_PLU "Fake PLU Start Map"
+{
+    next = "PLU01"
+    NoIntermission
+}
+
+map FAKE_TNTEND "TNT End Map"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "PLU01"
+    next = "EndGameC"
+}
+
+map FAKE_PLUEND "Plutonia End Map"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "TNT01"
+    next = "EndGameC"
+}
+
+//override the map definitions from the other modules
+map PLU30 "The Gateway to Hell"
+{
+	next = "FAKE_PLUEND"
+	secretnext = "FAKE_PLUEND"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 180
+	allowmonstertelefrags
+	music = "D_VICTOR"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map TNT30 "Last Call"
+{
+	next = "FAKE_TNTEND"
+	secretnext = "FAKE_TNTEND"
+	sky1 = "TNTSKY3"
+	cluster = 33
+	par = 180
+	allowmonstertelefrags
+	music = "D_TNT30"
+	InterMusic = "D_TNTINT"
+	ExitPic = "TNTERPIC"
+	EnterPic = "TNTERPIC"
+}

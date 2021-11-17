@@ -1,0 +1,87 @@
+//Episodes
+episode FAKE_FD
+{
+	name = "Freedoom (Single Episode)"
+	key = "F"
+}
+
+map FAKE_FD1 "Episode Changer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "F2M1"
+    next = "EndGame1"
+}
+
+map FAKE_FD2 "Episode Changer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "F3M1"
+    next = "EndGame2"
+}
+
+map FAKE_FD3 "Episode Changer"
+{
+    NoIntermission
+    NoAutosaveHint
+    redirect = "FullPlaythroughToken", "F4M1"
+    next = "endbunny"
+}
+
+map F1M8 "Outpost Quarry"
+{
+	levelnum = 8
+	next = "FAKE_FD1"
+	secretnext = "F1M9"
+	sky1 = "FDSKY1"
+	cluster = 1
+	par = 30
+	nointermission
+	nosoundclipping
+	baronspecial
+	specialaction_lowerfloor
+	music = "F_E1M8"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F2M8 "Containment Cell"
+{
+	levelnum = 18
+	next = "FAKE_FD2"
+	secretnext = "F2M9"
+	sky1 = "FDSKY2"
+	cluster = 2
+	par = 30
+	nointermission
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+	music = "F_E2M8"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}
+
+map F3M8 "Ancient Lair"
+{
+	levelnum = 28
+	next = "FAKE_FD3"
+	secretnext = "F3M9"
+	sky1 = "FDSKY3"
+	cluster = 3
+	par = 30
+	nointermission
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+	music = "F_E3M8"
+	exitpic = "FNTERPIC"
+	enterpic = "FNTERPIC"
+	InterMusic = "F_INTER"
+	BorderTexture = "FLOOR7_2"
+}

@@ -1,0 +1,116 @@
+#library "ChangeTextures"
+#import "func.acs"
+#include "zcommon.acs"
+
+//replace Doom2 textures that override Doom 1 textures with the same names
+//but only if we are playing Doom 1
+script "ChangeTextures" OPEN
+{
+    if (GameType() == GAME_TITLE_MAP)
+        terminate;
+    //if (PlayerNumber() != 0)
+        //terminate;
+
+    //let other texture-changing scripts work first (such as Brutal Doom's one)
+    //Delay(5);
+
+    if (IsAnimatedTextures() && !IsTNT())
+    {
+        if (IsDebug())
+            Log(s:"Applying Animated textures...");
+        ReplaceTextures("SPACEW3","SPACEW3A");
+        ReplaceTextures("COMPSTA2","COMPSTAA");
+        ReplaceTextures("SILVER3","SILVER3A");
+    }
+	if (IsDoom() || IsFreeDoom1() || IsMapsOfChaos() || IsExtras())
+    {
+        if (IsDebug())
+            Log(s:"Doom 1/Freedoom Detected: Swapping out Doom 2 textures...");
+
+		//swap out switches
+		ReplaceTextures("SW1BRN1","D1SW1B1");
+		ReplaceTextures("SW2BRN1","D1SW2B1");
+
+		ReplaceTextures("SW1STONE","D1SW1STO");
+		ReplaceTextures("SW2STONE","D1SW2STO");
+
+		ReplaceTextures("SW1STON2","D1SW1ST2");
+		ReplaceTextures("SW2STON2","D1SW2ST2");
+
+		ReplaceTextures("SW1STARG","D1SW1STG");
+		ReplaceTextures("SW2STARG","D1SW2STG");
+
+		//swap out other textures
+		ReplaceTextures("SHAWN1","D1SHAWN1");
+		
+	}
+    else if (IsTNT())
+    {
+        if (IsDebug())
+            Log(s:"TNT Detected: Applying TNT Specific textures...");
+
+		ReplaceTextures("SW1GSTON","TNTS1GST");
+		ReplaceTextures("SW2GSTON","TNTS2GST");
+		
+        ReplaceTextures("SW1SKULL","TNTSW1SK");
+        ReplaceTextures("SW2SKULL","TNTSW2SK");
+        
+        ReplaceTextures("SLADRIP1","TNTSDR1");
+        ReplaceTextures("SLADRIP3","TNTSDR3");
+        
+        ReplaceTextures("WFALL1","TNTWFAL1");
+        ReplaceTextures("WFALL4","TNTWFAL4");
+        
+        ReplaceTextures("BLODGR1","TNTBLGR1");
+        ReplaceTextures("BLODGR4","TNTBLGR4");
+        
+
+    }
+    else if (IsPlutonia())
+    {
+        if (IsDebug())
+            Log(s:"Plutonia Detected: Applying Plutonia Specific textures...");
+		
+        ReplaceTextures("SW1SKULL","PLS1SKUL");
+		ReplaceTextures("SW2SKULL","PLS2SKUL");
+		
+        ReplaceTextures("DBRAIN1","PLBRAIN1");
+        ReplaceTextures("DBRAIN4","PLBRAIN4");
+        
+        ReplaceTextures("FIREBLU1","PLFRBLU1");
+        ReplaceTextures("FIREBLU2","PLFRBLU2");
+    }
+    else if (IsFreedoom1())
+    {
+        if (IsDebug())
+            Log(s:"Freedoom Detected: Applying Freedoom Specific textures...");
+            
+        ReplaceTextures("MC2","FDMC2");
+        ReplaceTextures("MC3","FDMC2");
+        ReplaceTextures("MC4","FDMC2");
+        ReplaceTextures("MC5","FDMC2");
+        ReplaceTextures("MC6","FDMC2");
+        ReplaceTextures("MC7","FDMC2");
+        ReplaceTextures("MC8","FDMC2");
+        ReplaceTextures("MC10","FDMC2");
+        ReplaceTextures("MC11","FDMC2");
+        ReplaceTextures("MC12","FDMC2");
+        ReplaceTextures("MC13","FDMC2");
+        ReplaceTextures("MC14","FDMC2");
+        ReplaceTextures("MC15","FDMC2");
+        ReplaceTextures("MC16","FDMC2");
+        ReplaceTextures("MC17","FDMC2");
+        ReplaceTextures("MC18","FDMC2");
+        ReplaceTextures("MC19","FDMC2");
+        
+        ReplaceTextures("AROCK2","FDAROCK2");
+        ReplaceTextures("AROCK3","FDAROCK3");
+        ReplaceTextures("AROCK4","FDAROCK4");
+        ReplaceTextures("AROCK5","FDAROCK5");
+    }
+    else
+    {   if (IsDebug())
+            Log(s:"Doom 2 detected. Textures unmodified...");
+    }
+
+}

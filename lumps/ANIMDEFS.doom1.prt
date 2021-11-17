@@ -1,0 +1,4 @@
+switch doom 2 D1SW1B1 on pic D1SW2B1 tics 0
+switch doom 2 D1SW1STO on pic D1SW2STO tics 0
+switch doom 2 D1SW1ST2 on pic D1SW2ST2 tics 0
+switch doom 2 D1SW1STG on pic D1SW2STG tics 0

@@ -1,0 +1,28 @@
+episode z1m1
+{
+	name = "Extra Maps"
+	key = "x"
+	optional
+}
+
+cluster 36
+{
+	flat = "$bgflatE1"
+	music = "D_VICTOR"
+	exittext = lookup, "E1TEXT"
+}
+
+map Z1M1 "Tech Gone Bad"
+{
+	levelnum = 1
+	next = "EndGame1"
+	secretnext = "EndGame1"
+	sky1 = "D1SKY1"
+	cluster = 36
+	par = 300
+	music = "$MUSIC_E1M8"
+	exitpic = "$IN_E1"
+	enterpic = "$IN_E1"
+	InterMusic = "D_INTER"
+	BorderTexture = "FLOOR7_2"
+}

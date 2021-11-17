@@ -1,0 +1,149 @@
+//This file was created because the ReplaceTextures() function is garbage and only works if we have textures defined (it can't replace null or unknown textures"
+//This means that if we don't have ALL iwads loaded, some textures won't animate properly or will have other horrible issues!
+//This file is only included if we do NOT have the relevant game IWAD, otherwise the proper one is used instead
+//This simply makes every texture reference the placeholder patch
+
+Texture "PLFRBLU1", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "AROCK2", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "AROCK3", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "AROCK4", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "AROCK5", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "PLFRBLU2", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "WFALL1", 64, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "WFALL2", 64, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "WFALL3", 64, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "WFALL4", 64, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "PLBRAIN1", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC2", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC3", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC4", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC5", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC6", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC7", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC8", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC10", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC11", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC12", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC13", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC14", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC15", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC16", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC17", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC18", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "MC19", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "PLBRAIN4", 128, 128
+{
+	Patch "PLACEHOL", 256, 66
+}

@@ -1,0 +1,71 @@
+#library "Randomizer"
+#include "zcommon.acs"
+#import "func.acs"
+
+#define CVAR_RANDOMIZE "dc_use_randomizer"
+#define CVAR_RANDOMIZE_OFF 0
+#define CVAR_RANDOMIZE_ON 1
+#define CVAR_RANDOMIZE_ON_ALWAYS 2
+
+function void PlaceRandomized(str orig, str new, int chance, int min_lev)
+{
+
+    int x = GetActorX(0);
+    int y = GetActorY(0);
+    int z = GetActorZ(0);
+    int tid = ActivatorTID();
+    int angle = GetActorAngle(0);
+
+    //check if we were told to randomize previously
+    //OR if we have always random turned on
+
+    int game_level = GetMapNumberDoom1();
+
+    bool level_req = (min_lev <= game_level);
+    bool doom1 = IsDoom() || IsFreedoom1() || IsExtras();
+    bool known_map = IsKnownMap();
+    bool dorandom = ((!known_map && GetCVar(CVAR_RANDOMIZE) == CVAR_RANDOMIZE_ON) || GetCVar(CVAR_RANDOMIZE) == CVAR_RANDOMIZE_ON_ALWAYS);
+    bool seeded = Random(1,chance) == 1;
+
+    //Log(s:"Placing randomized object at ",f:x,s:" ",f:y,s:" ",f:z,s:" ",s:"...");
+
+    if (dorandom && seeded && level_req && doom1 && game_level != 8)
+        SpawnForced(new,x,y,z,tid,angle >> 8);
+    else
+        SpawnForced(orig,x,y,z,tid,angle >> 8);
+
+    Thing_Remove(0);
+}
+
+script "ReplaceChaingun" (void)
+{
+    PlaceRandomized("Chaingun","SuperShotgun",2,2);
+}
+
+script "ReplaceImp" (void)
+{
+    PlaceRandomized("DoomImp","ChaingunGuy",6,3);
+}
+
+script "ReplaceShotgunGuy" (void)
+{
+    PlaceRandomized("ShotgunGuy","ChaingunGuy",10,3);
+}
+
+script "ReplaceSpectre" (void)
+{
+    PlaceRandomized("Spectre","Spectre",30,99);
+}
+
+script "ReplaceBaron" (void)
+{
+    if (Random(1,2) == 1)
+        PlaceRandomized("BaronOfHell","HellKnight",3,1);
+    else
+        PlaceRandomized("BaronOfHell","ArchVile",7,1);
+}
+
+script "ReplaceCaco" (void)
+{
+    PlaceRandomized("Cacodemon","PainElemental",5,1);
+}

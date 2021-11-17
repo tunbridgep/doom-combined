@@ -1,0 +1,122 @@
+// MAPINFO for No Rest for the Living.
+
+episode MAS01
+{
+	name = "No Rest for the Living"
+	key = "N"
+}
+
+map MAS01 "The Earth Base"
+{
+	next = "MAS02"
+	secretnext = "MAS02"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 75
+	music = "D_MESSAG"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+map MAS02 "The Pain Labs"
+{
+	next = "MAS03"
+	secretnext = "MAS03"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 105
+	music = "D_DDTBLU"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+map MAS03 "Canyon of the Dead"
+{
+	next = "MAS04"
+	secretnext = "MAS04"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 120
+	music = "D_DEAD"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+map MAS04 "Hell Mountain"
+{
+	next = "MAS05"
+	secretnext = "MAS05"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 105
+	music = "D_SHAWN"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+map MAS05 "Vivisection"
+{
+	next = "MAS06"
+	secretnext = "MAS06"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 210
+	music = "D_IN_CIT"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+map MAS06 "Inferno of Blood"
+{
+	next = "MAS07"
+	secretnext = "MAS07"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 105
+	music = "D_THE_DA"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+map MAS07 "Baron's Banquet"
+{
+	next = "MAS08"
+	secretnext = "MAS08"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 165
+	music = "D_IN_CIT"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+map MAS08 "Tomb of Malevolence"
+{
+	next = "MAS09"
+	secretnext = "MAS09"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 105
+	music = "D_SHAWN"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+map MAS09 "March of the Demons"
+{
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "SKY1"
+	cluster = 50
+	par = 135
+	music = "D_DDTBLU"
+	exitpic = "MNTERPIC"
+	enterpic = "MNTERPIC"
+}
+
+cluster 50
+{
+	flat = "SLIME16"
+    music = "d_read_m"
+    ExitText = "TROUBLE WAS BREWING AGAIN IN YOUR FAVORITE","VACATION SPOT... HELL. SOME CYBERDEMON","PUNK THOUGHT HE COULD TURN HELL INTO A","PERSONAL AMUSEMENT PARK, AND MAKE EARTH","THE TICKET BOOTH.","","WELL THAT HALF-ROBOT FREAK SHOW DIDN'T","KNOW WHO WAS COMING TO THE FAIR. THERE'S","NOTHING LIKE A SHOOTING GALLERY FULL OF","HELLSPAWN TO GET THE BLOOD PUMPING...","","NOW THE WALLS OF THE DEMON'S LABYRINTH","ECHO WITH THE SOUND OF HIS METALLIC LIMBS","HITTING THE FLOOR. HIS DEATH MOAN GURGLES","OUT THROUGH THE MESS YOU LEFT OF HIS FACE.","","THIS RIDE IS CLOSED."
+}

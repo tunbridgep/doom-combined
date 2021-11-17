@@ -1,0 +1,770 @@
+#library "ItemPlacement"
+#import "func.acs"
+#import "Randomizer.acs"
+#include "zcommon.acs"
+
+
+Script "PopulateMaps" ENTER
+{
+	//stop anyone other than player 1 from running this script
+	if (PlayerNumber() != 0)
+		terminate;
+   
+    //stop if we are in the TITLEMAP
+    if (GameType() == GAME_TITLE_MAP)
+        terminate;
+
+    //only allow item placement for Doom 1
+    if (!IsDoom() && !IsFreedoom1() && !IsExtras() && !IsMapsOfChaos())
+    {
+        if(IsDebug())
+            Log(s:"ItemSpawner aborting: You are not running a Doom 1/Freedoom 1 map");
+        terminate;
+    }
+
+    //let the playerTID script run first
+    Thing_ChangeTID(0, 10000+PlayerNumber());
+
+	int mapID = GetMapIdentifier();
+
+	//fail if we have set classic mode to true
+	if (GetCVar("dc_no_extra_actors"))
+    {
+        if (IsDebug())
+            Log(s:"Classic mode enabled. Aborting spawning");
+		terminate;
+	}
+
+	//Delay(10); //give other things a chance to work
+
+	if (mapID == L_TESTMAP)
+	{
+		Replace("ChaingunGuy",672,96,180,0,0); //our test chaingun
+		Replace("ChaingunGuy",608,96,180,0,0); //our test chaingun
+	}
+
+	//episode 1
+	else if (mapID == L_E1M1 || mapID == L_MOC_E1M1)
+	{
+		AddDeco("ColonGibs",1088,-3264,0); //starting room near a dead marine
+	}
+	else if (mapID == L_E1M2)
+	{
+		Add("ChaingunGuy",-1312,2016,180,0,0); //near the end in the dark room the elevator drops into
+		Add("ChaingunGuy",-1312,1952,180,0,0); //near the end in the dark room the elevator drops into
+		Add("StealthChaingunGuy",192,-928,0,0,0); //In the maze, alcove next to backpack secret
+		Add("StealthChaingunGuy",192,-864,0,0,0); //In the maze, alcove next to backpack secret
+		Replace("ChaingunGuy",944,-304,0,0,0); //replaces the chaingun
+
+		Add("ChaingunGuy",-512,2240,135,0,0); //exit room
+
+		AddDeco("TechLamp2",-336,2288,0); //exit room near the exit switch
+		AddDeco("TechLamp2",-336,2384,0); //exit room near the exit switch
+	}
+	else if (mapID == L_E1M3 || mapID == L_MOC_E1M3)
+	{
+		Add("ChaingunGuy",-1600,-1536,270,0,0); //circular room before the secret exit
+		Add("ChaingunGuy",-1408,-1536,270,0,0); //circular room before the secret exit
+		Add("ChaingunGuy",-128,-704,90,0,0); //blue key room
+		Add("ChaingunGuy",-64,-704,90,0,0); //blue key room
+		Add("ChaingunGuy",-320,-1792,135,0,0); //room before regular exit with building stairs
+		Add("ChaingunGuy",-320,-1440,225,0,0); //room before regular exit with building stairs
+		Add("SuperShotgun",-992,-768,180,0,0); //green pit with health and switch
+		Add("Revenant",-992,-768,180,0,0); //green pit with health and switch
+	}
+	else if (mapID == L_E1M4 || mapID == L_MOC_E1M4)
+	{
+		Add("HellKnight",-1536,1888,0,0,0); //Exit room
+		Add("ChaingunGuy",-1408,1280,0,0,0); //Next to the Yellow keycard
+		Add("ChaingunGuy",-1056,1440,270,0,0); //Cage northeast of the Yellow keycard
+		Add("ChaingunGuy",-992,1440,270,0,0); //Cage northeast of the Yellow keycard
+		Add("ChaingunGuy",-32,736,180,0,0); //Blue keycard room
+		Add("ChaingunGuy",-96,576,180,0,0); //Blue keycard room
+		Add("ChaingunGuy",192,640,0,0,0); //Blue keycard room
+		Add("ChaingunGuy",96,704,0,0,0); //Blue keycard room
+		Add("Stimpack",-64,576,0,0,0); //Blue keycard room
+		Add("ChaingunGuy",-576,-64,135,0,0); //ashphalt thing just before the maze area
+        Add("ChaingunGuy",-480,0,135,0,0); //ashphalt thing just before the maze area
+		Add("ChaingunGuy",832,1888,315,0,0); //blue room near the starting zone
+		Add("ChaingunGuy",1536,1888,225,0,0); //blue room near the starting zone
+		Add("Stimpack",736,1504,0,0,0); //blue room near the starting zone
+		Add("ChaingunGuy",-416,1632,0,0,0); //swastika room
+		
+        AddDeco("TechLamp",1120,608,0); //metal/gray elevator room near the start
+        AddDeco("TechLamp",1120,928,0); //metal/gray elevator room near the start
+        AddDeco("TechLamp",672,800,0); //metal/gray elevator room near the start
+        AddDeco("TechLamp",672,480,0); //metal/gray elevator room near the start
+	}
+    else if (mapID == L_E1M5 || mapID == L_MOC_E1M5)
+    {
+		Add("ChaingunGuy",-1200,560,135,0,0); //nukage room with 2 pillars
+		Add("ChaingunGuy",-1200,1104,225,0,0); //nukage room with 2 pillars
+		Add("ChaingunGuy",448,832,180,0,0); //room across from yellow key
+		Add("ChaingunGuy",448,1240,270,0,0); //room across from yellow key, up the stairs
+        Add("ChaingunGuy",0,1856,270,0,0); //dark rooom before exit
+        Add("SuperShotgun",912,288,270,0,0); //green lava room with raising bridge
+        Add("HellKnight",0,1696,270,0,0); //dark room before exit
+    }
+    else if (mapID == L_E1M6 || mapID == L_MOC_E1M6)
+    {
+        Add("ChaingunGuy",1192,-972,270,0,0); //Trap room
+        Add("ChaingunGuy",1344,-1954,135,0,0); //Trap room
+        Add("Megasphere",1592,-1344,180,0,0); //Trap room
+        Add("ChaingunGuy",1040,-616,135,0,0); //Yellow Key room
+        Add("ChaingunGuy",1088,-560,135,0,0); //Yellow Key room
+        Add("SuperShotgun",-64,-128,0,0,0); //blue room
+        
+        Add("Revenant",-896,1216,0,0,0); //stairs room next to nukage room above blue room
+        Add("Revenant",-896,1336,0,0,0); //stairs room next to nukage room above blue room
+        
+        Add("Arachnotron",-1856,-1728,45,0,0); //the big pit of nukage near the blue key
+        Add("Arachnotron",-1536,-1984,90,0,0); //the big pit of nukage near the blue key
+
+        //spawn some enemies after the trap room goes off
+        while (IsDoorClosed(10)) { Delay(10); }
+
+        Delay(35); //wait a couple of seconds
+
+        //Doors are opened. Spawn some evil archviles!
+        Add("ArchVile",1424,-1576,90,0,99);
+        Add("PainElemental",1008,-1576,90,0,99);
+        Door_Close(9,16,0);
+        Delay(35 * 30); //wait 30 seconds
+        Door_Open(9,16,0);
+    }
+    else if (mapID == L_E1M7 || mapID == L_MOC_E1M7)
+    {
+        Add("ChaingunGuy",128,64,90,0,0);
+        Add("ChaingunGuy",256,64,90,0,0);
+        Add("HellKnight",-480,-2080,0,0,0);
+        Add("Revenant",-1312,-2656,90,0,0);
+        Add("Fatso",1152,-1664,90,0,0);
+        Add("Fatso",1280,-1664,90,0,0);
+        Add("Fatso",1408,-1664,90,0,0);
+        Add("Arachnotron",1088,-1344,90,0,0);
+        Add("Arachnotron",1280,-1344,90,0,0);
+        Add("Arachnotron",1440,-1344,90,0,0);
+        Add("Blursphere",864,-992,90,0,0);
+        Replace("Megasphere",1248,-1120,0,0,0); //replace normal Blursphere with a Megasphere since we are spawning enemies outside
+        Add("PainElemental",-384,-1728,270,0,0);
+		
+        //wait for the door that opens when we pick up the red key to open
+        while (IsDoorClosed(12)) { Delay(10); }
+
+        //Then spawn a hell knight
+        Add("HellKnight",-656,-1040,135,0,0);
+    }
+	else if (mapID == L_E1M8 || mapID == L_MOC_E1M8)
+	{
+
+		Add("Medikit",416,2656,0,0,0); //baron of hell chambers
+		Add("SuperShotgun",416,2464,270,0,0); //red elevator
+
+		//wait until the barons are released
+		while (IsDoorClosed(5)) { Delay(10); }
+
+		//wait a couple of seconds
+		Delay(70);
+
+        if (!IsBrutalDoom())
+        {
+            //doors are opened! Spawn some hell knights
+            //remember to spawn teleport fog as well for each one!
+            //by passing 99 to our spawn function
+            Add("HellKnight",416,3008,270,0,99); //baron of hell chambers
+            Add("HellKnight",256,2656,315,0,99); //baron of hell chambers
+            Add("HellKnight",560,2656,225,0,99); //baron of hell chambers
+            Add("HellKnight",64,2752,0,0,99); //baron of hell chambers
+            Add("HellKnight",768,2752,180,0,99); //baron of hell chambers
+        }
+        else
+        {
+            //doors are opened! Spawn some Belphegors
+            //remember to spawn teleport fog as well for each one!
+            //by passing 99 to our spawn function
+            Add("Belphegor2",416,3008,270,0,99); //baron of hell chambers
+            Add("Belphegor2",768,2752,180,0,99); //baron of hell chambers
+        }
+	}
+    else if (mapID == L_E1M9)
+    {
+        
+        Add("ChaingunGuy",2040,-1308,135,0,0);
+        Replace("ChaingunGuy",2400,96,180,0,0); //pillars where the imps normally stand
+        Replace("ChaingunGuy",2592,160,180,0,0); //pillars where the imps normally stand
+        Replace("ChaingunGuy",2528,-32,180,0,0); //pillars where the imps normally stand
+        Add("Revenant",2048,64,128,0,0);
+        Add("HellKnight",-128,1344,225,0,0);
+        Add("SuperShotgun",-576,-1312,0,0,0);
+
+        //wait until we have the Red key
+        while (IsDoorClosed(8)) { Delay(10); }    
+
+        //Spawn an ArchVile
+        Add("ArchVile",704,64,270,0,99);
+    }
+
+
+
+
+    //episode 2
+    else if (mapID == L_E2M1)
+    {
+        Add("HellKnight",2240,-1024,90,0,0);
+        Add("HellKnight",2048,-1024,90,0,0);
+        Add("PainElemental",2144,-768,90,0,0);
+        Add("SuperShotgun",1280,0,90,0,0);
+    }
+
+    else if (mapID == L_E2M2)
+    {
+        Add("ChaingunGuy",32,3552,90,0,0);
+        Add("ChaingunGuy",544,3040,270,0,0);
+        Add("HellKnight",1088,3072,135,0,0);
+        Add("Stimpaick",1088,3072,135,0,0);
+        Add("SuperShotgun",1376,2016,135,0,0);
+        Add("Arachnotron",1376,1024,90,0,0);
+        Add("HellKnight",640,192,0,0,0);
+        Add("Revenant",-288,-64,0,0,0);
+        Add("Revenant",-288,-128,0,0,0);
+        Add("Revenant",-352,-96,0,0,0);
+        Add("Megasphere",-288,-224,0,0,0);
+        Add("HellKnight",512,-352,180,0,0);
+    }
+
+    else if (mapID == L_E2M3)
+    {
+        Add("PainElemental",416,928,90,0,0);
+        Add("PainElemental",544,928,90,0,0);
+        Add("SuperShotgun",432,-256,90,0,0);
+        Add("HellKnight",352,480,270,0,0);
+        Add("Revenant",192,-192,180,0,0);
+        Add("Arachnotron",-320,448,270,0,0);
+        Add("ArchVile",-1088,400,0,0,0);
+        Add("Medikit",-1088,352,0,0,0);
+    }
+
+    else if (mapID == L_E2M4)
+    {
+        Add("SuperShotgun",-416,-2656,0,0,0);
+        Add("ChaingunGuy",-928,-1536,0,0,0);
+        Add("ChaingunGuy",-832,-1536,0,0,0);
+        Add("ChaingunGuy",-736,-1536,0,0,0);
+        Add("Mancubus",0,-1152,0,0,0);
+        Add("Revenant",1472,-1792,0,0,0);
+        Add("Revenant",1472,-1856,0,0,0);
+        Add("ChaingunGuy",2496,-1792,270,0,0);
+        Add("ChaingunGuy",2560,-1792,270,0,0);
+        Add("ChaingunGuy",2624,-1792,270,0,0);
+        Add("Megasphere",1472,-1984,270,0,0);
+        Add("Arachnotron",1088,-1824,0,0,0);
+        Add("Arachnotron",1088,-1664,0,0,0);
+        Add("Arachnotron",1088,-1984,0,0,0);
+        Add("PainElemental",-960,-1152,90,0,0);
+        Add("PainElemental",-960,-1248,90,0,0);
+        Add("ArchVile",2176,-2368,90,0,0);
+    }
+
+    else if (mapID == L_E2M5)
+    {
+        Add("PainElemental",-1568,1568,90,0,0);
+        Add("ChaingunGuy",-2592,928,90,0,0);
+        Add("ChaingunGuy",-2592,992,90,0,0);
+        Add("ChaingunGuy",-2944,192,270,0,0);
+        Add("ChaingunGuy",-3200,192,270,0,0);
+        Add("Revenant",-3488,96,0,0,0);
+        Add("Revenant",-3424,96,0,0,0);
+        Add("Fatso",-3072,32,90,0,0);
+        Add("Megasphere",-2944,320,90,0,0);
+
+        while (IsDoorClosed(3)) { Delay(10); }
+
+        Add("ArchVile",-3072,-64,270,0,99);
+    }
+
+    else if (mapID == L_E2M6)
+    {
+        Add("HellKnight",640,1472,270,0,0);
+        Add("HellKnight",832,1472,270,0,0);
+        Add("HellKnight",736,1376,270,0,0);
+        Add("Revenant",864,1376,270,0,0);
+        Add("Revenant",608,1376,270,0,0);
+        
+        //Wait for door leading to exit doors to open up
+        while (IsDoorClosed(2)) { Delay(10); }
+
+        Add("ArchVile",640,1472,270,0,99);
+        Add("HellKnight",640,1376,270,0,99);
+        
+        while (IsDoorClosed(22)) { Delay(10); }
+
+        Add("ArchVile",640,1472,270,0,99);
+        Add("ArchVile",640,1376,270,0,99);
+        Add("HellKnight",864,1376,270,0,0);
+        Add("HellKnight",608,1376,270,0,0);
+        Add("Megasphere",608,1376,270,0,0);
+
+    }
+
+    else if (mapID == L_E2M7)
+    {
+        Add("HellKnight",544,416,90,0,0);
+        Add("HellKnight",416,416,90,0,0);
+        Add("ChaingunGuy",480,-352,90,0,0);
+        Add("ChaingunGuy",352,-352,90,0,0);
+        Add("ChaingunGuy",608,-352,90,0,0);
+        Add("ChaingunGuy",736,-224,180,0,0);
+        Add("ChaingunGuy",736,-96,180,0,0);
+        Add("ChaingunGuy",224,-96,0,0,0);
+        Add("ChaingunGuy",224,-224,0,0,0);
+        Add("Medikit",480,-256,0,0,0);
+        Add("Revenant",1056,-512,90,0,0);
+        Add("ArchVile",2360,488,180,0,0);
+        Add("Arachnotron",3480,-224,90,0,0);
+        Add("Arachnotron",3240,-224,90,0,0);
+        Add("PainElemental",3672,304,135,0,0);
+        Add("Medikit",3816,-296,135,0,0);
+        Add("ArchVile",2720,96,180,0,0);
+        
+        while (!IsFloorLevel(1,48)) { Delay(10); }
+
+        Add ("ArchVile",1920,-224,180,0,99);
+        Add ("ChaingunGuy",1920,-128,180,0,99);
+        Add ("ChaingunGuy",1920,-320,180,0,99);
+
+        Delay(35 * 5);
+
+        Add ("Megasphere",1760,-224,180,0,99);
+    }
+
+    else if (mapID == L_E2M8)
+    {
+        Add("SuperShotgun",-96,-936,0,0,0);
+        Add("SuperShotgun",-96,-664,0,0,0);
+        Add("SuperShotgun",-232,-800,0,0,0);
+        Add("SuperShotgun",40,-800,0,0,0);
+        Add("Megasphere",-88,1632,0,0,0);
+    }
+
+    else if (mapID == L_E2M9 || mapID == L_MOC_E2M9)
+    {
+        Add("SuperShotgun",736,-384,0,0,0);
+        Add("Revenant",1664,416,270,0,0);
+        Add("Revenant",1664,-1184,90,0,0);
+        Add("PainElemental",1984,-384,180,0,0);
+        Add("Arachnotron",2112,-384,180,0,0);
+        Add("HellKnight",2496,-352,180,0,0);
+        Add("HellKnight",2496,-416,180,0,0);
+        Add("ArchVile",2592,-384,180,0,0);
+        Add("Megasphere",2544,-384,180,0,0);
+    }
+
+    //episode 3
+    else if (mapID == L_E3M1 || mapID == L_MOC_E3M1)
+    {
+       Add("SuperShotgun",-800,1376,0,0,0); 
+       Add("ChaingunGuy",-896,1568,270,0,0); 
+       Add("ChaingunGuy",-704,1568,270,0,0); 
+    }
+
+    else if (mapID == L_E3M2)
+    {
+        Add("PainElemental",576,2016,315,0,0);
+        Add("PainElemental",160,1696,315,0,0);
+        Add("HellKnight",128,1792,315,0,0);
+        Add("HellKnight",32,1696,315,0,0);
+        Add("Stimpack",32,1696,315,0,0);
+    }
+
+    else if (mapID == L_E3M3)
+    {
+        Add("PainElemental",-1184,-160,0,0,0);
+        Add("Revenant",-384,128,270,0,0);
+        Add("Revenant",-320,128,270,0,0);
+        Add("SuperSHotgun",-352,-992,270,0,0);
+        Add("Arachnotron",-640,544,90,0,0);
+    }
+
+    else if (mapID == L_E3M4)
+    {
+       Add("ChaingunGuy",896,448,180,0,0); 
+       Add("ChaingunGuy",896,384,180,0,0); 
+    }
+    
+    else if (mapID == L_E3M5 || mapID == L_MOC_E3M5)
+    {
+        Add("SuperShotgun",-224,-96,0,0,0); 
+        Add("HellKnight",-384,1280,270,0,0); 
+        Add("HellKnight",-64,1280,270,0,0); 
+        Add("Megasphere",-224,2240,270,0,0); 
+
+        while (!IsFloorLevel(10,0)) { Delay(10); }
+
+        Add("Fatso",-224,2240,90,0,99); 
+        Add("Revenant",-96,2240,90,0,99); 
+        Add("Revenant",-352,2240,90,0,99); 
+        Add("ArchVile",1024,288,180,0,99);
+    }
+    
+    else if (mapID == L_E3M6)
+    {
+        Add("SuperShotgun",-128,192,315,0,0); 
+        //while (!IsDoorOpen(16)) { Delay(10); }
+        //Add("Revenant",-416,768,45,0,99); 
+        while (IsFloorLevel(17,200)) { Delay(10); }
+        //Add("ArchVile",-96,1152,180,0,99); 
+        Add("Revenant",-96,1152,180,0,99); 
+        Delay(70);
+        Add("MediKit",-32,1152,180,0,99);
+    }
+
+    else if (mapID == L_E3M7)
+    {
+    }
+    
+    else if (mapID == L_E3M8 || mapID == L_MOC_E3M8)
+    {
+        //SPIDERS!!!!
+        Add("Arachnotron",-384,64,315,0,0);
+        Add("Arachnotron",192,96,270,0,0);
+        Add("Arachnotron",704,0,225,0,0);
+        Add("Arachnotron",544,384,225,0,0);
+        Add("Arachnotron",-288,448,315,0,0);
+        Add("Arachnotron",-192,832,270,0,0);
+        Add("Arachnotron",576,864,270,0,0);
+        Add("Arachnotron",192,1056,270,0,0);
+        Add("Megasphere",160,640,225,0,0);
+    }
+
+    else if (mapID == L_E3M9 || mapID == L_MOC_E3M9)
+    {
+       Add("SuperShotgun",-672,1376,0,0,0); 
+       Add("ChaingunGuy",-768,1568,270,0,0); 
+       Add("ChaingunGuy",-576,1568,270,0,0); 
+    }
+
+	//episode 4
+	else if (mapID == L_E4M1)
+	{
+		Add("SuperShotgun",-432,-128,0,0,0); //on the raised platform near the red key
+		Add("Revenant",-1056,-128,0,0,0); //exit room
+		Add("ChaingunGuy",-416,-576,90,0,0); //red key
+		Add("ChaingunGuy",-352,-576,90,0,0); //red key
+		Add("ChaingunGuy",-288,-576,90,0,0); //red key
+		Add("ChaingunGuy",-992,-608,0,0,0); //baron ambush
+		Add("ChaingunGuy",-864,-640,0,0,0); //baron ambush
+		Add("ChaingunGuy",-448,-256,90,0,0); //inside red key bunker near double barrel shotgun
+		Add("Stimpack",-640,-256,90,0,0); //inside red key bunker near double barrel shotgun
+
+
+	}
+	else if (mapID == L_E4M2)
+	{
+		Add("SuperShotgun",160,256,270,0,0); //starting area
+		Add("HellKnight",-544,1312,270,0,0); //room after the lava room with the yellow key
+		Add("Arachnotron",-640,512,45,0,0); //lava pit in the lava room near the yellow key
+		Add("Arachnotron",-384,352,90,0,0); //lava pit in the lava room near the yellow key
+	}
+	else if (mapID == L_E4M3)
+    {
+		Add("SuperShotgun",928,992,270,0,0); //after some steps
+		Add("HellKnight",320,800,270,0,0); //middle of the map
+        
+        while (IsDoorClosed(3)) { Delay(10); }
+		
+        Add("Archvile",1728,-576,135,0,99); //exit area
+        Add("Medikit",1728,-576,135,0,99); //exit area
+    }
+
+	else if (mapID == L_E4M4)
+    {
+		Add("SuperShotgun",32,-1440,270,0,0); //near the center of the map
+		Add("Fatso",160,-544,270,0,0); //near the exit
+    }
+
+	else if (mapID == L_E4M5)
+    {
+    }
+
+	else if (mapID == L_E4M6)
+    {
+    }
+
+	else if (mapID == L_E4M7)
+    {
+    }
+
+	else if (mapID == L_E4M8)
+    {
+		Add("SuperShotgun",-1664,32,270,0,0);
+    }
+
+	else if (mapID == L_E4M9)
+    {
+		Add("SuperShotgun",128,-192,270,0,0);
+    }
+    else if (mapID == L_ROMERO)
+    {
+        //Do nothing
+    }
+    else if (mapID == L_SIGIL1)
+    {
+        //Do nothing
+    }
+    else if (mapID == L_SIGIL2)
+    {
+        //SP Stuff
+		Add("SuperShotgun",-576,-640,270,0,0);
+		Add("HellKnight",384,0,0,0,0);
+		Add("HellKnight",384,128,0,0,0);
+		Add("Medikit",288,128,0,0,0);
+
+        //DM Stuff
+		Add("SuperShotgun",5920,-736,270,0,0);
+    }
+    else if (mapID == L_SIGIL3)
+    {
+        //DM Stuff
+		Add("Megasphere",-2848,224,270,0,0);
+
+        //SP Stuff
+        while (IsFloorLevel(9,336)) { Delay(10); }
+        Delay(24 * 5);
+        Add("ArchVile",288,-800,270,0,99); 
+        Add("Megasphere",-608,-1472,270,0,99); 
+    }
+    else if (mapID == L_SIGIL4)
+    {
+        //DM Stuff
+		Add("SuperShotgun",3104,-1440,270,0,0);
+
+        //SP Stuff
+		Add("SuperShotgun",-64,-2208,270,0,0);
+		Add("PainElemental",-640,-3552,0,0,0);
+		Add("PainElemental",-640,-3744,0,0,0);
+		Add("PainElemental",-640,-3936,0,0,0);
+		Add("PainElemental",1088,-3552,180,0,0);
+		Add("PainElemental",1088,-3744,180,0,0);
+		Add("PainElemental",1088,-3936,180,0,0);
+        Add("Megasphere",320,-3904,0,0,0);
+    }
+    else if (mapID == L_SIGIL5)
+    {
+        //DM Stuff
+		Add("Megasphere",-8864,-384,270,0,0);
+		Add("SuperShotgun",-7904,352,270,0,0);
+
+        //SP Stuff
+		Add("Revenant",448,384,180,0,0);
+		Add("Revenant",-960,448,0,0,0);
+		Add("SuperShotgun",-96,0,0,0,0);
+		Add("Stimpack",-224,768,0,0,0);
+		Add("Megasphere",-1184,544,0,0,0);
+		Add("Archvile",-1184,1344,270,0,0);
+    }
+
+    /////freedoom
+    else if (mapID == L_F1M1)
+    {
+    }
+    else if (mapID == L_F1M2)
+    {
+    }
+    else if (mapID == L_F1M3)
+    {
+    }
+    else if (mapID == L_F1M4)
+    {
+    }
+    else if (mapID == L_F1M5)
+    {
+    }
+    else if (mapID == L_F1M6)
+    {
+    }
+    else if (mapID == L_F1M7)
+    {
+    }
+    else if (mapID == L_F1M8)
+    {
+    }
+    else if (mapID == L_F1M9)
+    {
+    }
+
+	else
+    {
+        if (IsDebug())
+        Log(s:"MapID not registered. Custom PWAD?");
+	}
+
+}
+
+function bool IsDoorOpen(int tag)
+{
+    int height = GetSectorCeilingZ(tag,0,0) >> 16;
+    int flr = GetSectorFloorZ(tag,0,0) >> 16;
+    
+    if (height > flr)
+        return 1;
+    return 0;
+}
+
+//Check if the floor of a sector is at a certain value
+function bool IsFloorLevel(int tag, int level)
+{
+    int flr = GetSectorFloorZ(tag,0,0) >> 16;
+    if (flr == level)
+        return 1;
+    return 0;
+}
+
+function bool IsDoorClosed(int tag)
+{
+    return IsDoorOpen(tag) == 0;
+}
+
+function void Add(str class,int x, int y, int angle, int minimum_skill, int object_properties)
+{
+	int byte_angle = 0;
+
+	int fixed_x = x << 16;
+	int fixed_y = y << 16;
+    int fixed_z = GetSectorFloorZ(0,x,y);
+
+	if (angle == 45)
+		byte_angle = 32;
+	else if (angle == 90)
+		byte_angle = 64;
+	else if (angle == 135)
+		byte_angle = 96;
+	else if (angle == 180)
+		byte_angle = 128;
+	else if (angle == 225)
+		byte_angle = 160;
+	else if (angle == 270)
+		byte_angle = 192;
+	else if (angle == 315)
+		byte_angle = 224;
+	else
+		byte_angle = 0;
+
+    //spawn object
+	if (Spawn(class,fixed_x,fixed_y,fixed_z,17391,byte_angle) == 0)
+    {
+        if (IsDebug())
+            Log(s:"Could not spawn ",s:class,s:" at ",i:x,s:", ",i:y,s:", ",i:(fixed_z >> 16));
+    }
+    else
+    {
+        SetActorProperty(17391,APROP_Ambush,1);
+
+	    if (object_properties == 99)
+		    SpawnForced("TeleportFog",fixed_x,fixed_y,fixed_z,0,byte_angle);
+    }
+}
+
+//This is a seperate function because it is a lot simpler than spawning in enemies
+function void AddDeco(str class,int x, int y,int object_properties)
+{
+
+	int fixed_x = x << 16;
+	int fixed_y = y << 16;
+    int fixed_z = GetSectorFloorZ(0,x,y);
+
+    //spawn object
+	SpawnForced(class,fixed_x,fixed_y,fixed_z,0,0);
+
+	if (object_properties == 99)
+		SpawnForced("TeleportFog",fixed_x,fixed_y,fixed_z,0,0);
+}
+
+Script "DeleteMe" (void)
+{
+    PrintBold(s:"A replacement object was given to ", s:GetActorClass(0));
+    Thing_Remove(0);
+}
+
+function void Replace(str class, int x, int y, int angle, int minimum_skill, int object_properties)
+{
+    if (!GetCVAR("dc_use_gzdoom_extensions"))
+        return;
+        
+	int byte_angle = 0;
+
+	int fixed_x = x << 16;
+	int fixed_y = y << 16;
+    int fixed_z = GetSectorFloorZ(0,x,y);
+
+	if (angle == 45)
+		byte_angle = 32;
+	else if (angle == 90)
+		byte_angle = 64;
+	else if (angle == 135)
+		byte_angle = 96;
+	else if (angle == 180)
+		byte_angle = 128;
+	else if (angle == 225)
+		byte_angle = 160;
+	else if (angle == 270)
+		byte_angle = 192;
+	else if (angle == 315)
+		byte_angle = 224;
+	else
+		byte_angle = 0;
+
+    //spawn the dummy "replacer" object
+    bool removed = false;
+
+	SpawnForced("DC_Replacer",fixed_x,fixed_y,fixed_z,17399,byte_angle);
+    while (CheckProximity (17399, "Actor", 8.0, 1, CPXF_ANCESTOR|CPXF_SETTARGET))
+    {
+        //We succesfully found the object we are trying to replace, so remove it
+        //Log(s:"We found a ");
+        SetActivator(17399,AAPTR_TARGET);
+        Thing_Remove(0);
+        removed = true;
+    }
+
+    if (removed)
+    {
+        //spawn new object and give it the ambush flag
+	    if (SpawnForced(class,fixed_x,fixed_y,fixed_z,17391,byte_angle) == 0)
+        {
+            if (IsDebug())
+                Log(s:"Could not spawn ",s:class,s:" at ",i:x,s:", ",i:y,s:", ",i:(fixed_z >> 16),s:" (replacement)");
+        }
+        else
+        {
+            SetActorProperty(17391,APROP_Ambush,1);
+        }
+    }
+    else
+    {
+        If (IsDebug())
+            Log(s:"WARNING: Replacement failed for object ",s:class,s:" at ",i:x,s:", ",i:y);
+    }
+    
+
+	if (object_properties == 99)
+		SpawnForced("TeleportFog",fixed_x,fixed_y,fixed_z,0,byte_angle);
+}
+
+Script "TestTID" (void)
+{
+	Thing_ChangeTID(0,9999);
+	while (true)
+	{
+		SetActivatorToTarget(9999);
+
+		if (ActivatorTID() != 9999)
+        {
+            if (IsDebug())
+    			Log(s:GetActorClass(0), s:" with tid ", i:ActivatorTID());
+        }
+		else if (IsDebug())
+			Log(s:"No TID under cursor");
+
+		Delay(35);
+	}
+}

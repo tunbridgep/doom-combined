@@ -1,0 +1,39 @@
+//This file was created because the ReplaceTextures() function is garbage and only works if we have textures defined (it can't replace null or unknown textures"
+//This means that if we don't have ALL iwads loaded, some textures won't animate properly or will have other horrible issues!
+//This file is only included if we do NOT have the relevant game IWAD, otherwise the proper one is used instead
+//This simply makes every texture reference the placeholder patch
+
+Texture "BLODGR1", 32, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "BLODGR2", 32, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "BLODGR3", 32, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "BLODGR4", 32, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLADRIP1", 64, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLADRIP2", 64, 128
+{
+	Patch "PLACEHOL", 256, 66
+}
+
+Texture "SLADRIP3", 64, 128
+{
+	Patch "PLACEHOL", 256, 66
+}

@@ -1,0 +1,53 @@
+OptionValue "OnOffReversed"
+{
+	0, "On"
+	1, "Off"
+}
+
+OptionValue "RandomizerOptions"
+{
+	0, "Off"
+	1, "Only for PWADs"
+	2, "Always"
+}
+
+OptionMenu "DCOptions"
+{
+    Title "Doom Combined"
+    Option "Spawn Doom 2 Actors in Doom 1/Freedoom 1/SIGIL", "dc_no_extra_actors", "OnOffReversed"
+    StaticText "Determines if Doom 2 objects should be"
+    StaticText "spawned when playing Doom 1, Sigil and the Freedoom episodes."
+    StaticText "Objects may still spawn based on randomizer settings, this"
+    StaticText "only affects hand-placed objects"
+    StaticText "Default is On"
+    StaticText ""
+    Option "Allow TNT Animated Textures", "dc_use_tnt_animated_textures", "OnOff"
+    StaticText "Determines if TNT's special animated computer screen textures"
+    StaticText "should be used in other episodes instead of static screens"
+    StaticText "Default is Off"
+    StaticText ""
+    Option "Allow Continuous Master Levels", "dc_allow_continuous_master_levels", "OnOff"
+    StaticText "Determines if the players weapons will be kept between each map"
+    StaticText "when playing the Master Levels maps"
+    StaticText "This is always the case when playing any wad that changes"
+    StaticText "the players loadout, as there is no way to guarantee weapons are"
+    StaticText "stripped properly, so this setting is ignored in those cases"
+    StaticText "Default is Off"
+    StaticText ""
+    Option "Enable Randomizer", "dc_use_randomizer", "RandomizerOptions"
+    StaticText "Allows some Doom 2 items to randomly replace Doom 1 items"
+    StaticText "This is intended for PWADs, since there"
+    StaticText "are no hand-placed items in PWADs"
+    StaticText "However it can be enabled even when"
+    StaticText "playing regular Doom 1 maps, and"
+    StaticText "randomized objects will appear alongside hand-placed ones"
+    StaticText "Default is Off"
+    StaticText ""
+    
+}
+
+AddOptionMenu "OptionsMenu"
+{
+    StaticText ""
+    Submenu "Doom Combined Options", "DCOptions"
+}

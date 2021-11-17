@@ -1,0 +1,4 @@
+switch doom 2 PLS1SKUL on pic PLS2SKUL tics 0
+
+texture	PLBRAIN1 range PLBRAIN4 tics 8 allowdecals
+texture	PLFRBLU1 range PLFRBLU2 tics 8 allowdecals

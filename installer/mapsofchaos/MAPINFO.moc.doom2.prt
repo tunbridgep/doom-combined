@@ -1,0 +1,410 @@
+episode moc01
+{
+	name = "Hell On Earth (Maps of Chaos)"
+    optional
+}
+
+map MOC01 lookup "HUSTR_1"
+{
+	titlepatch = "CWILV00"
+	next = "MOC02"
+	secretnext = "MOC02"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 30
+	music = "$MUSIC_RUNNIN"
+}
+
+map MOC02 lookup "HUSTR_2"
+{
+	titlepatch = "CWILV01"
+	next = "MOC03"
+	secretnext = "MOC03"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 90
+	music = "$MUSIC_STALKS"
+}
+
+map MOC03 lookup "HUSTR_3"
+{
+	titlepatch = "CWILV02"
+	next = "MOC04"
+	secretnext = "MOC04"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 120
+	music = "$MUSIC_COUNTD"
+}
+
+map MOC04 lookup "HUSTR_4"
+{
+	titlepatch = "CWILV03"
+	next = "MOC05"
+	secretnext = "MOC05"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 120
+	music = "$MUSIC_BETWEE"
+}
+
+map MOC05 lookup "HUSTR_5"
+{
+	titlepatch = "CWILV04"
+	next = "MOC06"
+	secretnext = "MOC06"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 90
+	music = "$MUSIC_DOOM"
+}
+
+map MOC06 lookup "HUSTR_6"
+{
+	titlepatch = "CWILV05"
+	next = "MOC07"
+	secretnext = "MOC07"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 150
+	sucktime = 1
+	music = "$MUSIC_THE_DA"
+}
+
+map MOC07 lookup "HUSTR_7"
+{
+	titlepatch = "CWILV06"
+	next = "MOC08"
+	secretnext = "MOC08"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 120
+	map07special
+	music = "$MUSIC_SHAWN"
+}
+
+map MOC08 lookup "HUSTR_8"
+{
+	titlepatch = "CWILV07"
+	next = "MOC09"
+	secretnext = "MOC09"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 120
+	music = "$MUSIC_DDTBLU"
+}
+
+map MOC09 lookup "HUSTR_9"
+{
+	titlepatch = "CWILV08"
+	next = "MOC10"
+	secretnext = "MOC10"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 270
+	music = "$MUSIC_IN_CIT"
+}
+
+map MOC10 lookup "HUSTR_10"
+{
+	titlepatch = "CWILV09"
+	next = "MOC11"
+	secretnext = "MOC11"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 90
+	music = "$MUSIC_DEAD"
+}
+
+map MOC11 lookup "HUSTR_11"
+{
+	titlepatch = "CWILV10"
+	next = "MOC12"
+	secretnext = "MOC12"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 210
+	music = "$MUSIC_STLKS2"
+}
+
+map MOC12 lookup "HUSTR_12"
+{
+	titlepatch = "CWILV11"
+	next = "MOC13"
+	secretnext = "MOC13"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_THEDA2"
+}
+
+map MOC13 lookup "HUSTR_13"
+{
+	titlepatch = "CWILV12"
+	next = "MOC14"
+	secretnext = "MOC14"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_DOOM2"
+}
+
+map MOC14 lookup "HUSTR_14"
+{
+	titlepatch = "CWILV13"
+	next = "MOC15"
+	secretnext = "MOC15"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_DDTBL2"
+}
+
+map MOC15 lookup "HUSTR_15"
+{
+	titlepatch = "CWILV14"
+	next = "MOC16"
+	secretnext = "MOC31"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 210
+	music = "$MUSIC_RUNNI2"
+}
+
+map MOC16 lookup "HUSTR_16"
+{
+	titlepatch = "CWILV15"
+	next = "MOC17"
+	secretnext = "MOC17"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_DEAD2"
+}
+
+map MOC17 lookup "HUSTR_17"
+{
+	titlepatch = "CWILV16"
+	next = "MOC18"
+	secretnext = "MOC18"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 420
+	music = "$MUSIC_STLKS3"
+}
+
+map MOC18 lookup "HUSTR_18"
+{
+	titlepatch = "CWILV17"
+	next = "MOC19"
+	secretnext = "MOC19"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_ROMERO"
+}
+
+map MOC19 lookup "HUSTR_19"
+{
+	titlepatch = "CWILV18"
+	next = "MOC20"
+	secretnext = "MOC20"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 210
+	music = "$MUSIC_SHAWN2"
+}
+
+map MOC20 lookup "HUSTR_20"
+{
+	titlepatch = "CWILV19"
+	next = "MOC21"
+	secretnext = "MOC21"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_MESSAG"
+}
+
+map MOC21 lookup "HUSTR_21"
+{
+	titlepatch = "CWILV20"
+	next = "MOC22"
+	secretnext = "MOC22"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 240
+	music = "$MUSIC_COUNT2"
+}
+
+map MOC22 lookup "HUSTR_22"
+{
+	titlepatch = "CWILV21"
+	next = "MOC23"
+	secretnext = "MOC23"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_DDTBL3"
+}
+
+map MOC23 lookup "HUSTR_23"
+{
+	titlepatch = "CWILV22"
+	next = "MOC24"
+	secretnext = "MOC24"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 180
+	music = "$MUSIC_AMPIE"
+}
+
+map MOC24 lookup "HUSTR_24"
+{
+	titlepatch = "CWILV23"
+	next = "MOC25"
+	secretnext = "MOC25"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_THEDA3"
+}
+
+map MOC25 lookup "HUSTR_25"
+{
+	titlepatch = "CWILV24"
+	next = "MOC26"
+	secretnext = "MOC26"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_ADRIAN"
+}
+
+map MOC26 lookup "HUSTR_26"
+{
+	titlepatch = "CWILV25"
+	next = "MOC27"
+	secretnext = "MOC27"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 300
+	music = "$MUSIC_MESSG2"
+}
+
+map MOC27 lookup "HUSTR_27"
+{
+	titlepatch = "CWILV26"
+	next = "MOC28"
+	secretnext = "MOC28"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 330
+	music = "$MUSIC_ROMER2"
+}
+
+map MOC28 lookup "HUSTR_28"
+{
+	titlepatch = "CWILV27"
+	next = "MOC29"
+	secretnext = "MOC29"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 420
+	music = "$MUSIC_TENSE"
+}
+
+map MOC29 lookup "HUSTR_29"
+{
+	titlepatch = "CWILV28"
+	next = "MOC30"
+	secretnext = "MOC30"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 300
+	music = "$MUSIC_SHAWN3"
+}
+
+map MOC30 lookup "HUSTR_30"
+{
+	titlepatch = "CWILV29"
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 180
+	allowmonstertelefrags
+	music = "$MUSIC_OPENIN"
+}
+
+map MOC31 lookup "HUSTR_31"
+{
+	titlepatch = "CWILV30"
+	next = "MOC16"
+	secretnext = "MOC32"
+	sky1 = "SKY3"
+	cluster = 9
+	par = 120
+	music = "$MUSIC_EVIL"
+}
+
+map MOC32 lookup "HUSTR_32"
+{
+	titlepatch = "CWILV31"
+	next = "MOC16"
+	secretnext = "MOC16"
+	sky1 = "SKY3"
+	cluster = 10
+	par = 30
+	music = "$MUSIC_ULTIMA"
+}
+
+// DOOM II first cluster (up thru level 6)
+
+cluster 45
+{
+	flat = "$BGFLAT06"
+	exittext = lookup, "C1TEXT"
+
+}
+
+// DOOM II second cluster (up thru level 11)
+
+cluster 46
+{
+	flat = "$BGFLAT11"
+	exittext = lookup, "C2TEXT"
+
+}
+
+// DOOM II third cluster (up thru level 20)
+
+cluster 47
+{
+	flat = "$BGFLAT20"
+	exittext = lookup, "C3TEXT"
+}
+
+// DOOM II fourth cluster (up thru level 30)
+
+cluster 48
+{
+	flat = "$BGFLAT30"
+	exittext = lookup, "C4TEXT"
+}
+
+// DOOM II fifth cluster (level 31)
+
+cluster 49
+{
+	flat = "$BGFLAT15"
+	entertext = lookup, "C5TEXT"
+}
+
+// DOOM II sixth cluster (level 32)
+
+cluster 50
+{
+	flat = "$BGFLAT31"
+	entertext = lookup, "C6TEXT"
+}

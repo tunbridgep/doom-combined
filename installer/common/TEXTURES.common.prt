@@ -1,0 +1,14 @@
+Texture "BFALL", 64, 128
+{
+	Patch "BFALL1", 0, 0
+}
+
+Texture "SFALL", 64, 128
+{
+	Patch "SFALL1", 0, 0
+}
+
+Texture "WFALL", 64, 128
+{
+	Patch "WFALL1", 0, 0
+}

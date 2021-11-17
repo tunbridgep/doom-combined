@@ -1,0 +1,338 @@
+#library "func"
+#include "zcommon.acs"
+
+#libdefine L_E1M1 4716033
+#libdefine L_E1M2 7864074
+#libdefine L_E1M3 13102451
+#libdefine L_E1M4 4721748
+#libdefine L_E1M5 4717749
+#libdefine L_E1M6 11008758
+#libdefine L_E1M7 8389239
+#libdefine L_E1M8 14679800
+#libdefine L_E1M9 30933025
+
+#libdefine L_E2M1 8388657
+#libdefine L_E2M2 5772362
+#libdefine L_E2M3 3672395
+#libdefine L_E2M4 30405516
+#libdefine L_E2M5 5243701
+#libdefine L_E2M6 7341038
+#libdefine L_E2M7 17829071
+#libdefine L_E2M8 10484936
+#libdefine L_E2M9 8388361
+
+#libdefine L_E3M1 -4195711
+#libdefine L_E3M2 16779106
+#libdefine L_E3M3 4717187
+#libdefine L_E3M4 8389732
+#libdefine L_E3M5 10483701
+#libdefine L_E3M6 15728590
+#libdefine L_E3M7 9436175
+#libdefine L_E3M8 20970280
+#libdefine L_E3M9 -5244159
+
+#libdefine L_E4M1 8389121
+#libdefine L_E4M2 8388930
+#libdefine L_E4M3 31982427
+#libdefine L_E4M4 6812804
+#libdefine L_E4M5 18353197
+#libdefine L_E4M6 20971878
+#libdefine L_E4M7 8912719
+#libdefine L_E4M8 8388872
+#libdefine L_E4M9 14156297
+
+#libdefine L_MOC_E1M1 13628273
+#libdefine L_MOC_E1M3 21490187
+#libdefine L_MOC_E1M4 17303692
+#libdefine L_MOC_E1M5 17299405
+#libdefine L_MOC_E1M6 23590974
+#libdefine L_MOC_E1M7 67635671
+#libdefine L_MOC_E1M8 14679764
+
+#libdefine L_MOC_E2M9 10485513
+
+#libdefine L_MOC_E3M1 -3671423
+#libdefine L_MOC_E3M5 37483765
+#libdefine L_MOC_E3M8 16775976
+#libdefine L_MOC_E3M9 -3671415
+
+#libdefine L_TESTMAP 225
+
+#libdefine L_F1M1 8388753
+#libdefine L_F1M2 8389266
+#libdefine L_F1M3 5241895
+#libdefine L_F1M4 9960604
+#libdefine L_F1M5 4718437
+#libdefine L_F1M6 12582758
+#libdefine L_F1M7 6291231
+#libdefine L_F1M8 7867016
+#libdefine L_F1M9 14676889
+
+#libdefine L_F2M1 23855917
+#libdefine L_F2M2 8453331
+#libdefine L_F2M3 8388971
+#libdefine L_F2M4 4718084
+#libdefine L_F2M5 4718197
+#libdefine L_F2M6 8388150
+#libdefine L_F2M7 6818183
+#libdefine L_F2M8 32506176
+#libdefine L_F2M9 4718625
+
+#libdefine L_F3M1 24641321
+#libdefine L_F3M2 8388658
+#libdefine L_F3M3 8388659
+#libdefine L_F3M4 25163428
+#libdefine L_F3M5 8388285
+#libdefine L_F3M6 8388550
+#libdefine L_F3M7 4195431 
+#libdefine L_F3M8 29352984 
+#libdefine L_F3M9 6288041 
+
+#libdefine L_F4M1 12581249 
+#libdefine L_F4M2 8388226 
+#libdefine L_F4M3 8388165 
+#libdefine L_F4M4 6291988 
+#libdefine L_F4M5 13107973 
+#libdefine L_F4M6 4717942 
+#libdefine L_F4M7 4718151 
+#libdefine L_F4M8 9435272 
+#libdefine L_F4M9 8388253 
+
+
+//extra maps
+#libdefine L_ROMERO 4193889 
+
+
+Script "GivePlayerCustomTID" ENTER
+{
+    Thing_ChangeTID(0, 10000+PlayerNumber());
+}
+
+//tells us if we our map is one of the known IDs
+function bool IsKnownMap(void)
+{
+    int id = GetMapIdentifier();
+    
+    switch (id)
+    {
+        case L_E1M1:
+        case L_E1M2:
+        case L_E1M3:
+        case L_E1M4:
+        case L_E1M5:
+        case L_E1M6:
+        case L_E1M7:
+        case L_E1M8:
+        case L_E1M9:
+        case L_E2M1:
+        case L_E2M2:
+        case L_E2M3:
+        case L_E2M4:
+        case L_E2M5:
+        case L_E2M6:
+        case L_E2M7:
+        case L_E2M8:
+        case L_E2M9:
+        case L_E3M1:
+        case L_E3M2:
+        case L_E3M3:
+        case L_E3M4:
+        case L_E3M5:
+        case L_E3M6:
+        case L_E3M7:
+        case L_E3M8:
+        case L_E3M9:
+        case L_E4M1:
+        case L_E4M2:
+        case L_E4M3:
+        case L_E4M4:
+        case L_E4M5:
+        case L_E4M6:
+        case L_E4M7:
+        case L_E4M8:
+        case L_E4M9:
+        case L_F1M1:
+        case L_F1M2:
+        case L_F1M3:
+        case L_F1M4:
+        case L_F1M5:
+        case L_F1M6:
+        case L_F1M7:
+        case L_F1M8:
+        case L_F1M9:
+        case L_F2M1:
+        case L_F2M2:
+        case L_F2M3:
+        case L_F2M4:
+        case L_F2M5:
+        case L_F2M6:
+        case L_F2M7:
+        case L_F2M8:
+        case L_F2M9:
+        case L_F3M1:
+        case L_F3M2:
+        case L_F3M3:
+        case L_F3M4:
+        case L_F3M5:
+        case L_F3M6:
+        case L_F3M7:
+        case L_F3M8:
+        case L_F3M9:
+        case L_F4M1:
+        case L_F4M2:
+        case L_F4M3:
+        case L_F4M4:
+        case L_F4M5:
+        case L_F4M6:
+        case L_F4M7:
+        case L_F4M8:
+        case L_F4M9:
+        case L_TESTMAP:
+        case L_MOC_E1M1:
+        case L_MOC_E1M3:
+        case L_MOC_E1M4:
+        case L_MOC_E1M5:
+        case L_MOC_E1M6:
+        case L_MOC_E1M7:
+        case L_MOC_E1M8:
+        case L_MOC_E2M9:
+        case L_MOC_E3M1:
+        case L_MOC_E3M5:
+        case L_MOC_E3M8:
+        case L_MOC_E3M9:
+        case L_ROMERO:
+            //Log(s:"Known Map Found");
+            return true;
+    }
+    //Log(s:"Known Map not found");
+    return false;
+}
+
+function bool IsSkulltag(void)
+{
+    //stub until we figure this out
+    return false;
+}
+
+function bool IsBrutalDoom(void)
+{
+    if (GetActorClass(0) == "BDoomer" || GetActorClass(0) == "Doomer2" || GetActorClass(0) == "TacticalDoomer" || GetActorClass(0) == "Purist")
+        return true;
+    return false;
+}
+
+function int GetMapIdentifier(void)
+{
+	int playerX = GetActorX(10000) >> 16;
+	int playerY = GetActorY(10000) >> 16;
+	int playerZ = GetActorZ(10000) >> 16;
+    int mapnum = GetMapNumberDoom1();
+
+    int playerFloor = GetActorFloorZ(10000);
+    int playerCeiling = GetActorCeilingZ(10000);
+	
+	int uid = playerX + playerY + playerZ + playerFloor + playerCeiling + mapnum;
+
+    //I am doing this one manually because ACS doesn't allow string concatenation
+    //what a terrible language!
+    if (IsDebug())
+        Log(s:"Map UID = ", i:uid);
+
+	return uid;
+}
+
+function int GetMapNumberDoom1(void)
+{
+    str lumpname = strParam(n:PRINTNAME_LEVEL);
+    if (StrMid(lumpname,3,1) == "1")
+        return 1;
+    else if (StrMid(lumpname,3,1) == "2")
+        return 2;
+    else if (StrMid(lumpname,3,1) == "3")
+        return 3;
+    else if (StrMid(lumpname,3,1) == "4")
+        return 4;
+    else if (StrMid(lumpname,3,1) == "5")
+        return 5;
+    else if (StrMid(lumpname,3,1) == "6")
+        return 6;
+    else if (StrMid(lumpname,3,1) == "7")
+        return 7;
+    else if (StrMid(lumpname,3,1) == "8")
+        return 8;
+    return 9;
+}
+
+function bool IsDebug(void)
+{
+    if (GetCVar("dc_debug") > 0)
+        return true;
+    return false;
+}
+
+function bool IsAnimatedTextures(void)
+{
+    if (GetCVar("dc_use_tnt_animated_textures") > 0)
+        return true;
+    return false;
+}
+
+//detect if we are playing Doom 1
+function bool IsDoom(void)
+{
+    str lumpname = strParam(n:PRINTNAME_LEVEL);
+
+    if (StrLeft(lumpname,1) == "E" && StrMid(lumpname,2,1) == "M")
+        return true;
+    return false;
+}
+
+//detect if we are playing Master Levels
+function bool IsMasterLevels(void)
+{
+    str lumpname = strParam(n:PRINTNAME_LEVEL);
+
+    if (StrLeft(lumpname,1) == "M" && StrMid(lumpname,1,1) == "L")
+        return true;
+    return false;
+}
+
+//detect if we are playing TNT
+function bool IsTNT(void)
+{
+    str lumpname = strParam(n:PRINTNAME_LEVEL);
+
+    if (StrLeft(lumpname,1) == "T" && StrMid(lumpname,1,1) == "N" && StrMid(lumpname,2,1) == "T")
+        return true;
+    return false;
+}
+
+//detect if we are playing Plutonia
+function bool IsPlutonia(void)
+{
+    str lumpname = strParam(n:PRINTNAME_LEVEL);
+
+    if (StrLeft(lumpname,1) == "P" && StrMid(lumpname,1,1) == "L" && StrMid(lumpname,2,1) == "U")
+        return true;
+    return false;
+}
+
+//detect if we are playing Freedoom 1
+function bool IsFreedoom1(void)
+{
+    str lumpname = strParam(n:PRINTNAME_LEVEL);
+
+    if (StrLeft(lumpname,1) == "F" && StrMid(lumpname,2,1) == "M")
+        return true;
+    return false;
+}
+
+//detect if we are playing the Extras chapter
+function bool IsExtras(void)
+{
+    str lumpname = strParam(n:PRINTNAME_LEVEL);
+
+    if (StrLeft(lumpname,1) == "Z" && StrMid(lumpname,2,1) == "M")
+        return true;
+    return false;
+}

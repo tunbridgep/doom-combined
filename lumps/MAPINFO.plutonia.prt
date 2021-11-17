@@ -1,0 +1,443 @@
+// MAPINFO for Plutonia. Exactly the same as Doom 2, except it
+// has different map names and cluster messages.
+
+episode PLU01
+{
+	name  = "The Plutonia Experiment"
+	key  = "p"
+}
+
+map PLU01 "Congo"
+{
+	next = "PLU02"
+	secretnext = "PLU02"
+	sky1 = "PLUSKY1"
+	cluster = 20
+	par = 30
+	music = "$MUSIC_E1M2"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU02 "Well of Souls"
+{
+	next = "PLU03"
+	secretnext = "PLU03"
+	sky1 = "PLUSKY1"
+	cluster = 20
+	par = 90
+	music = "$MUSIC_E1M3"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU03 "Aztec"
+{
+	next = "PLU04"
+	secretnext = "PLU04"
+	sky1 = "PLUSKY1"
+	cluster = 20
+	par = 120
+	music = "$MUSIC_E1M6"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU04 "Caged"
+{
+	next = "PLU05"
+	secretnext = "PLU05"
+	sky1 = "PLUSKY1"
+	cluster = 20
+	par = 120
+	music = "$MUSIC_E1M4"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU05 "Ghost Town"
+{
+	next = "PLU06"
+	secretnext = "PLU06"
+	sky1 = "PLUSKY1"
+	cluster = 20
+	par = 90
+	music = "$MUSIC_E1M9"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU06 "Baron's Lair"
+{
+	next = "PLU07"
+	secretnext = "PLU07"
+	sky1 = "PLUSKY1"
+	cluster = 20
+	par = 150
+	music = "$MUSIC_E1M8"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU07 "Caughtyard"
+{
+	next = "PLU08"
+	secretnext = "PLU08"
+	sky1 = "PLUSKY1"
+	cluster = 21
+	par = 120
+	map07special
+	music = "$MUSIC_E2M1"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU08 "Realm"
+{
+	next = "PLU09"
+	secretnext = "PLU09"
+	sky1 = "PLUSKY1"
+	cluster = 21
+	par = 120
+	music = "$MUSIC_E2M2"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU09 "Abattoire"
+{
+	next = "PLU10"
+	secretnext = "PLU10"
+	sky1 = "PLUSKY1"
+	cluster = 21
+	par = 270
+	music = "$MUSIC_E3M3"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU10 "Onslaught"
+{
+	next = "PLU11"
+	secretnext = "PLU11"
+	sky1 = "PLUSKY1"
+	cluster = 21
+	par = 90
+	music = "$MUSIC_E1M7"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU11 "Hunted"
+{
+	next = "PLU12"
+	secretnext = "PLU12"
+	sky1 = "PLUSKY1"
+	cluster = 21
+	par = 210
+	music = "D_BUNNY"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU12 "Speed"
+{
+	next = "PLU13"
+	secretnext = "PLU13"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 150
+	music = "$MUSIC_E3M8"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU13 "The Crypt"
+{
+	next = "PLU14"
+	secretnext = "PLU14"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 150
+	music = "$MUSIC_E3M2"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU14 "Genesis"
+{
+	next = "PLU15"
+	secretnext = "PLU15"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 150
+	music = "$MUSIC_E2M8"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU15 "The Twilight"
+{
+	next = "PLU16"
+	secretnext = "PLU31"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 210
+	music = "$MUSIC_E2M7"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU16 "The Omen"
+{
+	next = "PLU17"
+	secretnext = "PLU17"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 150
+	music = "$MUSIC_E2M9"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU17 "Compound"
+{
+	next = "PLU18"
+	secretnext = "PLU18"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 420
+	music = "$MUSIC_E1M1"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU18 "Neurosphere"
+{
+	next = "PLU19"
+	secretnext = "PLU19"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 150
+	music = "$MUSIC_E1M7"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU19 "NME"
+{
+	next = "PLU20"
+	secretnext = "PLU20"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 210
+	music = "$MUSIC_E1M5"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU20 "The Death Domain"
+{
+	next = "PLU21"
+	secretnext = "PLU21"
+	sky1 = "PLUSKY2"
+	cluster = 22
+	par = 150
+	music = "$MUSIC_MESSAG"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU21 "Slayer"
+{
+	next = "PLU22"
+	secretnext = "PLU22"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 240
+	music = "D_READ_M"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU22 "Impossible Mission"
+{
+	next = "PLU23"
+	secretnext = "PLU23"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 150
+	music = "$MUSIC_DDTBL3"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU23 "Tombstone"
+{
+	next = "PLU24"
+	secretnext = "PLU24"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 180
+	music = "$MUSIC_AMPIE"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU24 "The Final Frontier"
+{
+	next = "PLU25"
+	secretnext = "PLU25"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 150
+	music = "$MUSIC_THEDA3"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU25 "The Temple of Darkness"
+{
+	next = "PLU26"
+	secretnext = "PLU26"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 150
+	music = "$MUSIC_ADRIAN"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU26 "Bunker"
+{
+	next = "PLU27"
+	secretnext = "PLU27"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 300
+	music = "$MUSIC_MESSG2"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU27 "Anti-Christ"
+{
+	next = "PLU28"
+	secretnext = "PLU28"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 330
+	music = "$MUSIC_E2M1"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU28 "The Sewers"
+{
+	next = "PLU29"
+	secretnext = "PLU29"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 420
+	music = "$MUSIC_E2M2"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU29 "Odyssey of Noises"
+{
+	next = "PLU30"
+	secretnext = "PLU30"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 300
+	music = "$MUSIC_E1M1"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU30 "The Gateway to Hell"
+{
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "PLUSKY3"
+	cluster = 23
+	par = 180
+	allowmonstertelefrags
+	music = "D_VICTOR"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU31 "Cyberden"
+{
+	next = "PLU16"
+	secretnext = "PLU32"
+	sky1 = "PLUSKY3"
+	cluster = 24
+	par = 120
+	music = "$MUSIC_E1M8"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+map PLU32 "Go 2 It"
+{
+	next = "PLU16"
+	secretnext = "PLU16"
+	sky1 = "PLUSKY3"
+	cluster = 25
+	par = 30
+	music = "$MUSIC_E2M8"
+	exitpic = "pnterpic"
+	enterpic = "pnterpic"
+}
+
+// DOOM II first cluster (up thru level 6)
+
+cluster 20
+{
+	flat = "$BGFLAT06"
+	exittext = lookup, "P1TEXT"
+}
+
+// DOOM II second cluster (up thru level 11)
+
+cluster 21
+{
+	flat = "$BGFLAT11"
+	exittext = lookup, "P2TEXT"
+}
+
+// DOOM II third cluster (up thru level 20)
+
+cluster 22
+{
+	flat = "$BGFLAT20"
+	exittext = lookup, "P3TEXT"
+}
+
+// DOOM II fourth cluster (up thru level 30)
+
+cluster 23
+{
+	flat = "$BGFLAT30"
+	exittext = lookup, "P4TEXT"
+}
+
+// DOOM II fifth cluster (level 31)
+
+cluster 24
+{
+	flat = "$BGFLAT15"
+	entertext = lookup, "P5TEXT"
+}
+
+// DOOM II sixth cluster (level 32)
+
+cluster 25
+{
+	flat = "$BGFLAT31"
+	entertext = lookup, "P6TEXT"
+}
+
