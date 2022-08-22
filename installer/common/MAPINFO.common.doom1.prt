@@ -47,6 +47,13 @@ episode e4m1
 	optional
 }
 
+episode e5m1
+{
+	name = "$HUSTR_EPI5"  //SIGIL by John Romero
+	key = "s"
+	picname = "M_EPI5"
+}
+
 episode map01
 {
 	name = "Hell On Earth"
